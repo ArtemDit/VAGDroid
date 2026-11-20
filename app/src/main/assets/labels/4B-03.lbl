@@ -1,0 +1,24 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A4 (8D) / Audi A6 (4B) / VW Passat (3B)
+;
+; Component: J104 - ABS (#03)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4B-03.LBL
+; 8D0-907-389.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 11/29/2004
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,8D0-907-389.LBL,4B0-907-389
+;

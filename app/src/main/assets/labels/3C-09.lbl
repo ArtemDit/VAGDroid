@@ -1,0 +1,24 @@
+;
+; VAG-COM Redirect File
+;
+; VW Caddy (2K) / VW Golf V (1K) / VW Touran (1T)
+; Seat Altea (5P) / Skoda Octavia II (1Z)
+;
+; Component: J519 - Central Electronics I (#09)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 3C-09.LBL
+; 1K0-937-049.LBL
+;
+; created on 04/Aug/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 07/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1K0-937-049.LBL,3C0-937-049-???
+;

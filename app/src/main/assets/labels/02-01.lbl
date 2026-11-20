@@ -1,0 +1,185 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 02-01.LBL
+; 022-906-032-AXK.LBL  (2.8l E   @ 204 HP - AXK)
+; 022-906-032-AYL.LBL  (2.8l E   @ 204 HP - AYL)
+; 022-906-032-BDB.LBL  (3.2l E   @ 250 HP - BDB/BHE/BMJ/BPF/BUB)
+; 022-906-032-BFH.LBL  (3.2l E   @ 241 HP - BFH)
+; 022-906-032-BJS.LBL  (3.2l E   @ 241 HP - BJS/BML)
+; 022-906-032-BMX.LBL  (3.2l E   @ 220 HP - AZZ/BAA/BKJ/BMV/BMX/BRJ)
+; 028-906-021-AFN.LBL  (1.9l TDI @ 110 HP - AFN/AVG)
+; 028-906-021-AHU.LBL  (1.9l TDI @  90 HP - 1Z/AHU)
+;
+; created on 02/Dec/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 11/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode BJS
+;
+; BJS/BML 3.2l 177kW/241HP (1J)
+; BFH 3.2l 177kW/241HP (1J)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,022-906-032-BJS.LBL,022-906-032-EG  ; BJS: (1J)
+REDIRECT,022-906-032-BJS.LBL,022-906-032-FC  ; BML: (1J)
+;
+REDIRECT,022-906-032-BFH.LBL,022-906-032-CN  ; BFH: (1J)
+REDIRECT,022-906-032-BFH.LBL,022-906-032-CP  ; BFH: (1J)
+REDIRECT,022-906-032-BFH.LBL,022-906-032-DS  ; BFH: (1J)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode BDB/BHE/BMJ/BPF
+;
+; BDB 3.2l 184kW/250HP (8P)
+; BHE 3.2l 184kW/250HP (8N)
+; BMJ 3.2l 184kW/250HP (8P)
+; BPF 3.2l 184kW/250HP (8N)
+; BUB 3.2l 184kW/250HP (1K)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,022-906-032-BDB.LBL,022-906-032-CA  ; BDB: Manual (8P)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-CB  ; BDB: DSG (8P)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-CD  ; BUB: Manual (1K)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-DN  ; BHE: DSG (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-DP  ; BHE: DSG (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-ET  ; BHE: Manual (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-FA  ; BHE: Manual (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-FR  ; BPF: DSG (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-FS  ; BPF: DSG (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-GE  ; BHE: DSG (8N)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-GH  ; BMJ: Manual (8P)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-GJ  ; BMJ: DSG (8P)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-GK  ; BMJ: Manual (8P)
+REDIRECT,022-906-032-BDB.LBL,022-906-032-GL  ; BMJ: DSG (8P)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AFN/AVG
+;
+; AFN/AVG 1.9l 81kW/110HP (1H, 3A, 3B, 6K, 6V, 7M, 8D)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,028-906-021-AFN.LBL,028-906-021-CE  ; AFN: (8D)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-EK  ; AFN: (6K, 6V)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-GL  ; AFN: (8D)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-GP  ; AFN: (7M)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-GT  ; AFN: (7M)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-JC  ; AFN: (8D)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-JD  ; AFN: (3B, 8D)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-JG  ; AFN: (1H)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-JH  ; AFN: (3A)
+REDIRECT,028-906-021-AFN.LBL,028-906-021-JJ  ; AFN/AVG: (7M)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode 1Z/AHU
+;
+; 1Z  1.9l 66kW/90HP (7M)
+; AHU 1.9l 66kW/90HP (3B, 7M)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,028-906-021-AHU.LBL,028-906-021-ES  ; 1Z/AHU: (7M)
+REDIRECT,028-906-021-AHU.LBL,028-906-021-GG  ; AHU: (1H)
+REDIRECT,028-906-021-AHU.LBL,028-906-021-GK  ; AHU: (3B)
+REDIRECT,028-906-021-AHU.LBL,028-906-021-GS  ; AHU: (7M)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AZZ/BAA/BKJ/BMV/BMX/BRJ 3.2l 162kW/220HP
+;
+; AZZ 3.2l 162kW/220HP (7L)
+; BAA 3.2l 162kW/220HP (7L)
+; BKJ 3.2l 162kW/220HP (7L)
+; BMV/BRJ 3.2l 162kW/220HP (7L)
+; BMX 3.2l 162kW/220HP (7L)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,022-906-032-BMX.LBL,022-906-032-BE ; AZZ: Automatic (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-BF ; BAA: (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-D  ; AZZ: Manual (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-EF ; BKJ: Automatic (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-FT ; BMX: (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-GA ; BMV: Automatic (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-GB ; BMV: Automatic (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-GC ; BMV/BRJ: Automatic (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-GD ; BMV: Manual (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-GT ; BMX: (7L)
+REDIRECT,022-906-032-BMX.LBL,022-906-032-JE ; BRJ: (7L)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AXK 2.8l 150kW/204HP
+;
+; AXK 2.8l 150kW/204HP (7D)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,022-906-032-AXK.LBL,022-906-032-AF ; AKX (7D)
+REDIRECT,022-906-032-AXK.LBL,022-906-032-AH ; AKX (7D)
+REDIRECT,022-906-032-AXK.LBL,022-906-032-F  ; AXK (7D)
+REDIRECT,022-906-032-AXK.LBL,022-997-032-CX ; AXK (7D)
+REDIRECT,022-906-032-AXK.LBL,022-997-032-FX ; AXK (7D)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AYL 2.8l 150kW/204HP
+;
+; AYL 2.8l 150kW/204HP (7M, 7V)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AA  ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AC  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AE  ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AQ  ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AR  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AS  ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-AT  ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-BA  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-BB  ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-CL  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-CT  ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-DA  ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-DB  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-DC  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-DE  ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-DF  ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-EH  ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-EJ  ; AYL: Automatic (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-EK  ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-G   ; AYL: Manual (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-J   ; AYL: Manual AWD (7M)
+REDIRECT,022-906-032-AYL.LBL,022-906-032-P   ; AYL: Automatic (7M)
+;

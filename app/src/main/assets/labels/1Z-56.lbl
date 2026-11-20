@@ -1,0 +1,25 @@
+;
+; VAG-COM Redirect File
+;
+; Skoda Octavia (1Z)
+;
+; Component: R - Radio (#56)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1Z-56.LBL
+; 1K0-035-1xx-56.LBL
+; 1T0-035-095.LBL
+;
+; created on 06/Apr/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 15/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1T0-035-095.LBL,1Z0-035-194-??? ; MFD2-CD
+;
+REDIRECT,1K0-035-1xx-56.LBL,1Z0-035-156-??? ; Radio Audience
+REDIRECT,1K0-035-1xx-56.LBL,1Z0-035-161-??? ; Radio Stream
+;

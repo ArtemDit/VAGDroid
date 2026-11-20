@@ -1,0 +1,28 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A6 (4B)
+;
+; Component: J285 - Instrument Cluster (#17)
+;
+; This is a redirect file that should
+; make all Audi A6 (4B)
+; instrument clusters work with 2 label files.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4B-17.LBL
+; 4Z-17.LBL
+; 4B0-919-xxx.LBL
+; 4B0-920-xxx.LBL
+;
+; created on 02/Oct/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 10/02/2004
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,4B0-919-xxx.LBL,4B0-919-???-???
+REDIRECT,4B0-920-xxx.LBL,4B0-920-???-???
+;

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VAGDroid">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+
+        <activity android:name=".ui.SelectModuleActivity" android:label="Выбор блока управления" />
+        <activity android:name=".ui.ControllerActivity" android:label="Блок управления" />
+        <activity android:name=".ui.FaultCodesActivity" android:label="Коды неисправностей" />
+        <activity android:name=".ui.BlocksActivity" android:label="Измеряемые группы" />
+        <activity android:name=".ui.OutputTestsActivity" android:label="Тест исполнителей" />
+        <activity android:name=".ui.LoginActivity" android:label="Логин - 11" />
+        <activity android:name=".ui.AdaptationActivity" android:label="Адаптация - 10" />
+        <activity android:name=".ui.BasicSettingsActivity" android:label="Базовые установки - 04" />
+        <activity android:name=".ui.CodingActivity" android:label="Кодирование - 07" />
+        <activity android:name=".ui.AutoscanActivity" android:label="Автосканирование" />
+        <activity android:name=".ui.SettingsActivity" android:label="Настройки" />
+        <activity android:name=".ui.LogActivity" android:label="Журнал" />
+        <activity android:name=".ui.ConnectActivity" android:label="Подключение адаптера" />
+        <activity android:name=".ui.ChassisActivity" android:label="Выбор кузова" />
+    </application>
+</manifest>

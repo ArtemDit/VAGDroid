@@ -1,0 +1,61 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8E-01.LBL
+; xxx-907-115-AXX.LBL (2.0l TE  @ 200 HP - AXX/BGB/BPJ/BPY/BWA)
+; xxx-910-559-BKH.LBL (3.2l FSI @ 256 HP - AUK/BKH)
+;
+; created on 31/Jul/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 25/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BGB 2.0l 150kW/200HP
+;
+; BGB 2.0l 150kW/200HP (8E)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xxx-907-115-AXX.LBL,8E0-907-115-A   ; BGB: (8E)
+REDIRECT,xxx-907-115-AXX.LBL,8E0-907-115-B   ; BPG: (8E)
+REDIRECT,xxx-907-115-AXX.LBL,8E0-907-115-H   ; BGB: (8E)
+REDIRECT,xxx-907-115-AXX.LBL,8E0-907-115-J   ; BGB: (8E)
+REDIRECT,xxx-907-115-AXX.LBL,8E0-907-115-M   ; BPG: (8E)
+REDIRECT,xxx-907-115-AXX.LBL,8E0-907-115-N   ; BGB: (8E)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AUK/BKH 3.2l 188kW/256HP
+;
+; AUK 3.2l 188kW/256HP (8E)
+; BKH 3.2l 188kW/256HP (8E)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559     ; BKH (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-B   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-C   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-D   ; BKH (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-F   ; BKH (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-G   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-K   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-L   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-M   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-Q   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-R   ; AUK (8E)
+REDIRECT,xxx-910-559-BKH.LBL,8E0-910-559-S   ; AUK (8E)
+;

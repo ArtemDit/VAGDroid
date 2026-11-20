@@ -1,0 +1,70 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine control modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4D-01.LBL
+; 4D0-907-560-AVP.LBL (4.2l E   @ 360 HP - AVP/AYS)
+; 4D0-907-560-AXQ.LBL (4.2l E   @ 310 HP - AXQ)
+; 4D0-907-560-BGH.LBL (4.2l E   @ 334 HP - BGH)
+;
+; created on 1/May/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 16/Apr/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AVP/AYS 4.2l 265kW/360HP
+;
+; AVP/AYS 4.2l 265kW/360HP (4D)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,4D0-907-560-AVP.LBL,4D0-907-559-AA  ; AVP: Automatic (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-907-559-C   ; AVP: Automatic (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-907-559-H   ; AVP: Manual (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-907-560-AT  ; AVP/AYS: Automatic (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-907-560-BN  ; AVP: Manual (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-907-560-CH  ; AVP/AYS: Automatic (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-997-559-DV  ; AVP: Manual (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-997-559-DX  ; AVP: Manual (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-997-559-LX  ; AVP: Manual (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-997-560-MX  ; AVP/AYS: Automatic (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-997-560-SX  ; AVP: Manual (4D)
+REDIRECT,4D0-907-560-AVP.LBL,4D0-997-561-LX  ; AVP/AYS: Automatic (4D)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BGH 4.2l 246kW/334HP
+;
+; BGH 4.2l 246kW/334HP (3D)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,4D0-907-560-BGH.LBL,4D0-907-560-CS  ; BGH: (3D)
+REDIRECT,4D0-907-560-BGH.LBL,4D0-907-560-DD  ; BGH: (3D)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AXQ 4.2l 228kW/310HP
+;
+; AXQ 4.2l 228kW/310HP (7L)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,4D0-907-560-AXQ.LBL,4D0-907-560-DA  ; AXQ: (7L)
+REDIRECT,4D0-907-560-AXQ.LBL,4D0-907-560-DB  ; AXQ: (7L)
+;

@@ -1,0 +1,23 @@
+;
+; VAG-COM Redirect File
+;
+; Skoda Octavia (1Z)
+;
+; Component: Radio-/Navigation (#37) - Navigation
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1Z-37.LBL
+; 1T0-919-887.LBL
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 03/27/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1T0-919-887.LBL,1Z0-035-194-???
+;

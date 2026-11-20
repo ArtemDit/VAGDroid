@@ -1,0 +1,50 @@
+;
+; VAG-COM label file 3D0-907-040.lbl
+;
+; VW Phaeton (3D) - up to and including model year 2005 
+;
+; component: Auto HVAC - 4 Zone Climatronic  -J301-  (#08)
+;
+;
+; p/n: 3D0 907 040 F  Component: Climatronic D1 1132   Coding: 0000001 (2004 Phaeton W12 NAR) (Brent)
+; p/n: 3D0 907 040 G  Component: Climatronic D1 1145   Coding: 0000002 (2004 Phaeton W12 NAR) (David C)
+; p/n: 3D0 907 040 G  Component: Climatronic D1 1132   Coding: 0000001 (2004 Phaeton W12 NAR) (Mike M)
+; p/n: 3D0 907 040 F  Component: Climatronic D1 1132   Coding: 0000001 (2004 Phaeton W12 ROW) (Daniel)
+; p/n: 3D0 907 040 H  Component: Climatronic D1 2021   Coding: 0000001 (2005 Phaeton  V8 NAR) (Robert)
+; p/n: 3D0 907 040 H  Component: Climatronic D1 2021   Coding: 0000001 (2004 Phaeton W12 ROW) (DD AM 2662)
+; p/n: 3D0 907 040 H  Component: Climatronic D1 2021   Coding: 0000001 (2005 Phaeton V6 TDI ROW) (Alex)
+; p/n: 3W0 907 040 G  Component: Climatronic BY  614   Coding: 0000001 (Bentley ROW)
+; p/n: 3W0 907 040 B  Component: Climatronic BY  614   Coding: 0000002 (Bentley NAR)
+;
+;
+; label file still needs to be written, this is only a placeholder file to contain the part number.
+;
+; by Michael Moore (Moore@ross-tech.com)
+;
+; created: 28/August/2005 (Michael)
+; last modified: 23/September/2005 (Michael) - Bentley information added
+; last modified: 23/November/2005 (Michael) - 2005 Phaeton V8 information added
+;
+;
+;---------------------------------------------------
+;
+; Measured Value Block information
+;
+;---------------------------------------------------
+;
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+;
+;---------------------------------------------------
+;
+; adaptation information
+;
+;---------------------------------------------------
+;

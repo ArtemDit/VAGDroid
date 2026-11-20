@@ -1,0 +1,27 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A3 (8L)
+;
+; Component: J285 - Instrument Cluster (#17)
+;
+; This is a redirect file that should
+; make all Audi A3 (8L)
+; instrument clusters work with 2 label files.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8L-17.LBL
+; 8L0-919-xxx.LBL
+; 8L0-920-xxx.LBL
+;
+; created on 26/Apr/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 26/Apr/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,8L0-919-xxx.LBL,8L0-919-???-???
+REDIRECT,8L0-920-xxx.LBL,8L0-920-???-???
+;

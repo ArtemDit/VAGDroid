@@ -1,0 +1,34 @@
+;
+; VAG-COM Redirect File
+;
+; Component: J104 - ABS (#03)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 7H-03.LBL
+; 7H0-907-37x-ASR.LBL   (MK60 ASR)
+; 7H0-907-37x-ESP-A.LBL (MK60 ESP AWD)
+; 7H0-907-37x-ESP-F.LBL (MK60 ESP FWD)
+;
+; created on 10/Aug/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 10/Aug/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,7H0-907-37x-ASR.LBL,7H0-907-37?-E     ; ASR FWD
+REDIRECT,7H0-907-37x-ASR.LBL,7H0-907-37?-G     ; ASR FWD
+;
+REDIRECT,7H0-907-37x-ASR.LBL,7H0-907-37?-B     ; ASR AWD
+;
+REDIRECT,7H0-907-37x-ESP-A.LBL,7H0-907-37?-C   ; ESP AWD
+REDIRECT,7H0-907-37x-ESP-A.LBL,7H0-907-37?-J   ; ESP AWD
+REDIRECT,7H0-907-37x-ESP-A.LBL,7H0-907-37?-M   ; ESP AWD
+;
+REDIRECT,7H0-907-37x-ESP-F.LBL,7H0-907-37?-F   ; ESP FWD
+REDIRECT,7H0-907-37x-ESP-F.LBL,7H0-907-37?-H   ; ESP FWD
+REDIRECT,7H0-907-37x-ESP-F.LBL,7H0-907-37?-L   ; ESP FWD
+;

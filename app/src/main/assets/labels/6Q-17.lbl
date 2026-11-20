@@ -1,0 +1,27 @@
+;
+; VAG-COM Redirect File
+;
+; Skoda Fabia (6Y) / VW Polo (9N)
+;
+; Component: J285 - Instrument cluster (#17)
+;
+; This is a redirect file that should
+; make all Skoda Fabia (6Y) / VW Polo (9N)
+; instrument clusters work with 1 label file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 6Q-17.LBL
+; 6Y-17.LBL
+; 6x0-920-xxx.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 10/21/2004
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,6x0-920-xxx.LBL,6Q0-920-???-???
+;

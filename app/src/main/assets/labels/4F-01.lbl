@@ -1,0 +1,96 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine control modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4F-01.LBL
+; 4F2-910-401-BPP.LBL (2.7l CR-TDI @ 177 HP - BPP/BSG)
+; xxx-907-115-AXX.LBL (2.0l TE  @ 200 HP - AXX/BGB/BPJ/BPY/BWA)
+; xxx-910-559-BKH.LBL (3.2l FSI @ 256 HP - AUK/BKH)
+; xx0-9xx-401-ASB.LBL (3.0l TDI @ 211-232 HP - ASB/BKS/BMK/BNG)
+;
+; created on 13/Jan/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 25/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AUK/BKH 3.2l 188kW/256HP
+;
+; AUK 3.2l 188kW/256HP (4F)
+; BKH 3.2l 188kW/256HP (4F)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559     ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-B   ; BKH (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-C   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-D   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-E   ; BKH (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-F   ; BKH (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-G   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-J   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-K   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-L   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-N   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-P   ; AUK (4F)
+REDIRECT,xxx-910-559-BKH.LBL,4F1-910-559-Q   ; AUK (4F)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode ASB/BKS/BMK/BNG 3.0l 155-171kW/211-232HP
+;
+; ASB 3.0l 171kW/232HP (4E)
+; BKS 3.0l 165kW/225HP (7L)
+; BMK 3.0l 165kW/224HP (3D, 4F)
+; BNG 3.0l 155kW/211HP (4E, 4F)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xx0-9xx-401-ASB.LBL,4F0-910-401-???  ; BMK/BNG (4F)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BPJ 2.0l 150kW/200HP
+;
+; BPJ 2.0l 150kW/200HP (4F)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xxx-907-115-AXX.LBL,4F2-907-115     ; BPJ: (4F)
+REDIRECT,xxx-907-115-AXX.LBL,4F2-907-115-A   ; BPJ: (4F)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BPP/BSG 2.7l TDI-CR
+;
+; BPP 2.7l TDI-CR 130kW/177HP (4F)
+; BSG 2.7l TDI-CR 120kW/163HP (4F)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401     ; BPP: Manual (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-A   ; BPP: Manual (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-C   ; BSG: Manual (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-H   ; BPP: Manual (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-P   ; BPP: (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-Q   ; BSG: (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-R   ; BPP: (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-401-S   ; BSG: Automatic (4F)
+REDIRECT,4F2-910-401-BPP.LBL,4F2-910-402     ; BSG: (4F)
+;

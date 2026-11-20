@@ -1,0 +1,26 @@
+;
+; VAG-COM Redirect File
+;
+; VW Polo (9N) / Skoda Fabia (6Y)
+;
+; Component: J519 - central electrics (#09)
+;
+; This is a redirect file that should
+; make all VW Polo (9N) / Skoda Fabia (6Y)
+; central elect. modules work with 1 label file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 6Q-09.LBL
+; 6Qx-937-049.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 08/01/2004
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,6Qx-937-049.LBL,6Q?-937-049-???
+;

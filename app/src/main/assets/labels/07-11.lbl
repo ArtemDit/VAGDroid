@@ -1,0 +1,45 @@
+;
+; VAG-COM Redirect File
+;
+; VW Phaeton (3D)
+;
+; Component: Engine (#11)
+;
+; This is a redirect file for engine control modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 07-01.LBL
+; 07-11.LBL
+; 07C-906-018-BAP1.LBL (6.0l E   @ 420 HP - BAN/BAP/BJN/BRN/BTT - Master)
+; 07C-906-018-BAP2.LBL (6.0l E   @ 420 HP - BAN/BAP/BJN/BRN/BTT - Slave)
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 03/30/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BAN/BAP/BJN/BRN/BTT
+;
+; BAN 6.0l 309 kW/420 HP (3D)
+; BAP 6.0l 309 kW/420 HP (3D)
+; BJN 6.0l 316 kW/430 HP (7L)
+; BRN 6.0l 331 kW/450 HP (3D)
+; BTT 6.0l 331 kW/450 HP (3D)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-AB ; BAP (3D)
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-AL ; BJN (7L)
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-B  ; BAN (3D)
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-C  ; BAP (3D)
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-D  ; BJN (7L)
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-G  ; BAN (3D)
+REDIRECT,07C-906-018-BAP2.LBL,07C-906-018-K  ; BAN (3D)
+;

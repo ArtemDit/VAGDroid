@@ -1,0 +1,31 @@
+;
+; VAG-COM Redirect File
+;
+; Component: J234 - Airbag (#15)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 6Q-15.LBL
+; 6Q0-909-605-VW5.LBL  (VW5)
+; 6Q0-909-605-VW52.LBL (VW52)
+;
+; created on 09/Oct/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 09/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,6Q0-909-605-VW5.LBL,6Q0-909-605      ; VW5
+REDIRECT,6Q0-909-605-VW5.LBL,6Q0-909-605-A    ; VW5
+REDIRECT,6Q0-909-605-VW5.LBL,6Q0-909-605-B    ; VW5
+REDIRECT,6Q0-909-605-VW5.LBL,6Q0-909-605-H    ; VW5
+REDIRECT,6Q0-909-605-VW5.LBL,6Q0-909-605-S    ; VW5
+;
+REDIRECT,6Q0-909-605-VW52.LBL,6Q0-909-605-AH  ; VW52
+REDIRECT,6Q0-909-605-VW52.LBL,6Q0-909-605-AJ  ; VW52
+REDIRECT,6Q0-909-605-VW52.LBL,6Q0-909-605-P   ; VW52
+REDIRECT,6Q0-909-605-VW52.LBL,6Q0-909-605-T   ; VW52
+;

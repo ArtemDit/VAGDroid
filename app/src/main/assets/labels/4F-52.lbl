@@ -1,0 +1,23 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A6 (4F)
+;
+; Component: J387 - Passenger's Door Electronics (#52)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4F-52.LBL
+; 4F0-910-792-52.LBL
+;
+; created on 16/Oct/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 16/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,4F0-910-792-52.LBL,4F0-910-79?-???
+;

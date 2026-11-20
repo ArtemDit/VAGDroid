@@ -1,0 +1,22 @@
+;
+; VAG-COM Redirect File
+;
+; VW Caddy (2K) / VW Golf/Jetta (1K) / VW Touran (1T)
+; Seat Altea/Toledo (5P) / Seat Leon (1P) / Skoda Octavia II (1Z)
+;
+; Component: J393 - Comfort System (#46)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1K-46.LBL
+; 1K0-959-433-46.LBL
+;
+; created on 02/Dec/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 02/Dec/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1K0-959-433-46.LBL,1K0-959-433-???
+;

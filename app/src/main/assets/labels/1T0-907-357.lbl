@@ -1,0 +1,51 @@
+;
+; VAG-COM Labelfile
+;
+; VW Caddy (2K) / VW Golf/Jetta (1K) / VW Touran (1T)
+; Seat Altea/Toledo (5P) / Skoda Octavia II (1Z)
+;
+; Component: J431 - Automatic Headlight Aim Control (#55)
+;
+; P/N: 1T0-907-357-???
+;
+; includes measuring blocks and coding
+;
+; created on 27/Mar/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 11/Nov/2005
+;
+; requires VAG-COM 402.3 or higher
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+001,1,Voltage Supply,Terminal 15
+001,2,Light,(Terminal 56b),Specification: On/Off
+001,3,Speed
+001,4,Acceleration
+;
+002,1,Sensor Signal,Front
+002,2,Sensor Signal,Rear
+002,3,Actuator Motor,Activation
+002,4,Time Constant
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+C00,Automatic Headlight Aim Control (J431) Coding
+C01,00001 - VW Touran (1T) Front-Wheel-Drive (FWD)
+C02,00002 - VW Touran (1T) All-Wheel-Drive (AWD)
+C03,00003 - VW Golf/Jetta (1K/5M) Front-Wheel-Drive (FWD)
+C04,00004 - VW Golf/Jetta (1K/5M) All-Wheel-Drive (AWD)
+C05,00007 - Skoda Octavia (1Z) Front-Wheel-Drive (FWD)
+;

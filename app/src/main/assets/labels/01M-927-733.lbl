@@ -1,0 +1,85 @@
+;
+; VAG-COM label file
+;
+; Seat Leon/Toledo (1M) / Skoda Octavia (1U) / VW Golf (1J) / VW New Beetle (1C)
+;
+; component: Transmission Electronic (#02) - 4-Speed Automatic Transmission 01M
+;
+; p/n: 01M 927 733 ???
+;
+; includes measuring blocks and coding
+;
+; based upon 01M-927-733.lbl by ???
+; updated on 10/05/2004 by Sebastian Stange (sebastian@ross-tech.com)
+; coding added on 07/13/2005 by Ericthebikeman (ops21_at_earthlink_dot_net)
+;
+; last modification: 06/Sep/2005
+;
+; requires VAG-COM 402.3 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block informations
+;
+;---------------------------------------------------
+;
+;
+001,1,Selector Lever,Position
+001,2,Throttle Valve,Voltage,Specification: 0...5.0 V
+001,3,Value of,Accelerator Pedal,Specification: 0...100 %
+001,4,Multi-Function,Switch
+;
+002,1,Solenoid Valve 6,Actual Current,N93 (Specification: 1...1.100 A)
+002,2,Solenoid Valve 6,Specified Current,N93 (Specification: 0...1.100 A)
+002,3,Battery,Voltage,Specification: 0...15.93 V
+002,4,Vehicle Speed,Sensor Voltage,G68 (Specification: 0...5.0 V)
+;
+003,1,Speed,,Specification: 0...255 km/h
+003,2,Engine Speed,,Specification: 0...7650 RPM
+003,3,Driving Mode
+003,4,Value of,Accelerator Pedal,Specification: 0...100 %
+;
+004,1,Solenoid Valves,Condition
+004,2,Driving Mode
+004,3,Selector Lever,Position
+004,4,Speed,,Specification: 0...255 km/h
+;
+005,1,ATF Temperature,,Specification: -40...+170 °C
+005,2,Multi-Function,Switch 2
+005,3,Gear to be,engaged
+005,4,Engine Speed,,Specification: 0...7650 RPM
+;
+006,1,Road Inclination,(calculated)
+006,2,Hill Factor
+006,3,Sport Factor
+006,4,Value of,Accelerator Pedal,Specification: 0...100 %
+;
+007,1,Driving Mode
+007,2,Lock-Up clutch,Slip Slipping,Specification: 0...3820 RPM
+007,3,Engine Speed,,Specification: 0...7650 RPM
+007,4,Value of,Accelerator Pedal,Specification: 0...100 %
+;
+;
+;---------------------------------------------------
+;
+; coding informations
+;
+;---------------------------------------------------
+;
+;
+C0,Automatic Transmission (01M) Coding
+C1,000?x - DSP Mode (Dynamic Shift Points)
+C2,0 - DSP active
+C3,1 - DSP inactive
+C4, 
+C5,000x? - Transmission Mode
+C6,0 - Factory Mode (Adaptive Transmission Mode)
+C7,1 - Force Economy Mode (lower Shift Points)
+C8,2 - Force Sport Mode (higher Shift Points)
+C9, 
+C10,Common Settings:
+C11,00000 - Factory Mode
+C12,00011 - Econonmy/Touring Mode
+C13,00012 - Sport Mode
+;

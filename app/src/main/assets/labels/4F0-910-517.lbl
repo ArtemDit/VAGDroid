@@ -1,0 +1,128 @@
+;
+; VAG-COM Labelfile
+;
+; Audi A6 (4F)
+;
+; Component: J104 - Brake Electronics (#03)
+;
+; P/N: 4F0-910-517-???
+;
+; includes measuring blocks and coding
+;
+; created on 27/Jun/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 02/Dec/2005
+;
+; requires VAG-COM 505.1 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+001,0,Wheel Speed
+001,1,Wheel Speed,Front Left,Display Range: 0...255 km/h
+001,2,Wheel Speed,Front Right,Display Range: 0...255 km/h
+001,3,Wheel Speed,Rear Left,Display Range: 0...255 km/h
+001,4,Wheel Speed,Rear Right,Display Range: 0...255 km/h
+;
+002,0,Switches && Buttons
+002,1,Brake Test Switch,,Display Range: 0/operated
+002,2,Brake Light Switch,,Display Range: 0/operated
+002,3,Parking Brake,Button,Display Range: 0/operated
+002,4,ESP-Passive,Button,Display Range: 0/operated
+;
+003,0,Engine Data
+003,1,Engine Speed
+003,2,Engine Torque
+003,3,Engine Torque,(loss)
+003,4,Throttle Valve Angle
+;
+004,0,Standing Time && EDL-T Flag
+004,1,Standing Time
+004,2,EDL-T Flag,,Display Range: ON/OFF\nSpecification: OFF
+;
+005,1,Steering Angle,Sensor (G85),Display Range: -720.0...+720.0 °\nTolerance: +/- 5.0 °
+005,2,Turn Rate,,Display Range: -69.0...+69.0 °/s
+005,3,Brake Pressure,,Display Range: -41.0...+292.0 bar\n\n-41.0 bar = short to ground\n290 bar = short to plus
+005,4,Lateral,Acceleration,Display Range: -25.0...+25.0 m/s²
+;
+006,1,Voltage Supply,(Terminal 30),Specification: 9.8...17.4 V
+006,2,Valve Relay,,Display Range: ON/OFF\nSpecification: ON
+006,3,Return Flow Pump,Status,Display Range: ON/OFF
+006,4,Workshop Code
+;
+007,0,Installation Position
+007,1,Install. Position,Front Left,Display Range: invalid/OK/not OK (invalid when standig still)
+007,2,Install. Position,Front Right,Display Range: invalid/OK/not OK (invalid when standig still)
+007,3,Install. Position,Rear Left,Display Range: invalid/OK/not OK (invalid when standig still)
+007,4,Install. Position,Rear Right,Display Range: invalid/OK/not OK (invalid when standig still)
+;
+008,0,Direction of Rotation
+008,1,Direction,Front Left,Display Range: invalid/forward/reverse (invalid when standig still)
+008,2,Direction,Front Right,Display Range: invalid/forward/reverse (invalid when standig still)
+008,3,Direction,Rear Left,Display Range: invalid/forward/reverse (invalid when standig still)
+008,4,Direction,Rear Right,Display Range: invalid/forward/reverse (invalid when standig still)
+;
+009,1,Brake Test Switch,,Display Range: 0/operated
+009,2,Brake Light Switch,,Display Range: 0/operated
+009,3,Brake Pressure,,Display Range: -41.0...+292.0 bar\n\n-41.0 bar = short to ground\n290 bar = short to plus
+;
+011,0,Additional Brake Pressure Sensors (only with ACC)
+011,1,Brake Pressure,Front Right,Display Range: -41.0...+292.0 bar\n\n-41.0 bar = short to ground\n290 bar = short to plus
+011,2,Brake Pressure,Front Left,Display Range: -41.0...+292.0 bar\n\n-41.0 bar = short to ground\n290 bar = short to plus
+;
+014,0,Airbag Coding Info (not relevant)
+;
+015,0,Engine Coding Info (not relevant)
+;
+016,0,Signals of Electro-Mechanical Parking Brake (not relevant)
+;
+021,0,Data from ESP Sensor Unit -G419- (not relevant)
+;
+022,0,Steering Angle Sensor Data (not relevant)
+;
+023,0,Variant Coding Data (not relevant)
+;
+125,0,CAN-Databus Communication (Powertrain)
+125,1,Steering Angle,Sensor,Specification: Steer. ang. 1
+125,2,Engine,,Specification: Engine 1
+125,3,Automatic,Transmission,Specification: Transm. 1
+125,4,Instrument Cluster,,Specification: Instruments 1
+;
+126,0,CAN-Databus Communication (Powertrain)
+126,1,Distance,Regulation (ACC),Specification: Distance 1
+126,2,CAN-Gateway,,Specification: Gateway 1
+126,3,Electric Parking,Brake (EPB),Specification: Park Brake 1
+126,4,ESP Sensor,Cluster,Specification: ESP Sens. 1
+;
+127,0,CAN-Databus Communication (Powertrain)
+127,1,Level Control,,Specification: Level 1
+127,2,Airbag,,Specification: Airbag 1
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+C00,Brake Electronics (J104) Coding
+C01,ESP-Variant:
+C02,Available on request.
+C03, 
+C04,Options:
+C05,Available on request.
+C06, 
+C07,Trailer Hitch (4F0-910-517-K and above):
+C08,+0000000 = with Trailer Hitch with Towing Recognition Control Module (J345)
+C09,+0016384 = with/without Trailer Hitch without Towing Recognition Control Module (J345)
+C10, 
+C11,Detailed coding instructions for this
+C12,control module are available on request.
+C13,Mail to: sebastian@ross-tech.com
+;

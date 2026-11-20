@@ -1,0 +1,24 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A4 Cabriolet (8H)
+;
+; Component: Radio (#56)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8H-37.LBL
+; 8H-56.LBL
+; xx0-035-192-RNSE.LBL
+;
+; created on 25/Aug/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 25/Aug/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+REDIRECT,xx0-035-192-RNSE.LBL,8H0-035-192     ; RNS-E
+REDIRECT,xx0-035-192-RNSE.LBL,8H0-035-192-A   ; RNS-E
+;

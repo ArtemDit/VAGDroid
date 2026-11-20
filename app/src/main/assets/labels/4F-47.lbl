@@ -1,0 +1,23 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A3 (8P)
+;
+; Component: Sound System (#47)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4F-47.LBL
+; 4F0-910-7xx-47.LBL
+;
+; created on 15/Aug/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 15/Aug/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,4F0-910-7xx-47.LBL,4F0-910-7??-??? ; J525 integrated in J523
+;

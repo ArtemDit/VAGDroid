@@ -1,0 +1,33 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 06-01.LBL
+; 1C-01.LBL
+; 8N-01.LBL
+; 06A-906-032-AWP.LBL (1.8l TE  @ 180 HP - AWP)
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 19/Apr/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AWP
+;
+; AWP 1.8l 110kW/180HP (1C)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,06A-906-032-AWP.LBL,1C0-906-032     ; AWP: (1C)
+;

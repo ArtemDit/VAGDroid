@@ -1,0 +1,37 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 06-01.LBL
+; 8L-01.LBL
+; 8N-01.LBL
+; 06A-906-032-AJQ.LBL (1.8l TE  @ 180 HP - AJQ/APP/ARY/AUQ)
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 03/24/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AJQ/APP/ARY/AUQ 1.8l 132kW/180HP
+;
+; AJQ/APP/ARY/AUQ 1.8l 132kW/180HP (1J, 1M, 8L, 8N)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,06A-906-032-AJQ.LBL,8L0-906-018-J   ; AJQ: AWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8L0-906-018-Q   ; ARY/AUQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8L0-906-018-R   ; ARY/AUQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8L0-997-018-CX  ; ARY/AUQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8L0-997-018-EX  ; ARY/AUQ: (8N)
+;

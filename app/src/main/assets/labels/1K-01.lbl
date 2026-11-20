@@ -1,0 +1,34 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1K-01.LBL
+; xxx-907-115-AXX.LBL (2.0l TE  @ 200 HP - AXX/BGB/BPJ/BPY/BWA)
+;
+; created on 17/Apr/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 31/Jul/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AXX 2.0l 150kW/200HP
+;
+; AXX 2.0l 150kW/200HP (1K)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xxx-907-115-AXX.LBL,1K0-907-115     ; AXX: (1K)
+REDIRECT,xxx-907-115-AXX.LBL,1K0-907-115-A   ; AXX: (1K)
+REDIRECT,xxx-907-115-AXX.LBL,1K0-907-115-D   ; AXX: (1K)
+REDIRECT,xxx-907-115-AXX.LBL,1K0-907-115-E   ; AXX: (1K)
+;

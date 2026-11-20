@@ -1,0 +1,32 @@
+;
+; VAG-COM label file
+;
+; VW Touareg (7L)
+;
+; component: head roof controller (#6E)
+;
+; ECU p/n: 7L6 919 044 C
+;
+; includes adaption
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 03/14/2004
+;
+; ready for VAG-COM 402.3 and above
+;
+;
+;---------------------------------------------------
+;
+; adaption informations
+;
+;---------------------------------------------------
+;
+;
+A01,0,Display light time
+A01,1,Time light,stays on
+A01,6,Entered value multiplied by 5 is the time in seconds
+A01,7,how long the display is beeing lighted.
+A01,8,0 is unlimited. basic setting is 6 (30 seconds).
+;

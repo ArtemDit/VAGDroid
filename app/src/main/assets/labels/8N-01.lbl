@@ -1,0 +1,86 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 06-01.LBL
+; 8L-01.LBL
+; 8N-01.LBL
+; 06A-906-032-AJQ.LBL (1.8l TE  @ 180 HP - AJQ/APP/ARY/AUQ)
+; 06A-906-032-AWP.LBL (1.8l TE  @ 180 HP - AWP)
+; 8N0-906-018-BAM.LBL (1.8l TE  @ 225 HP - BAM)
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 19/Apr/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AWP
+;
+; AWP 1.8l 110kW/180HP (8N)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,06A-906-032-AWP.LBL,8N0-906-018-AL  ; AWP: (8N)
+REDIRECT,06A-906-032-AWP.LBL,8N0-906-018-BD  ; AWP: (8N)
+REDIRECT,06A-906-032-AWP.LBL,8N0-906-018-CK  ; AWP: (8N)
+REDIRECT,06A-906-032-AWP.LBL,8N0-906-018-CM  ; AWP: (8N)
+REDIRECT,06A-906-032-AWP.LBL,8N0-906-018-L   ; AWP: (8N)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BAM 1.8l 165kW/225HP
+;
+; BAM 1.8l 165kW/225HP (8L, 8N)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,8N0-906-018-BAM.LBL,8N0-906-018-BJ ; (8L)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-906-018-BH ; (8L)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-906-018-CB ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-906-018-CC ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-906-018-CG ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-906-018-H  ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-997-018-PX ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-997-020-DX ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-997-020-GX ; (8N)
+REDIRECT,8N0-906-018-BAM.LBL,8N0-997-020-NX ; (8N)
+;
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AJQ/APP/ARY/AUQ 1.8l 132kW/180HP
+;
+; AJQ/APP/ARY/AUQ 1.8l 132kW/180HP (1J, 1M, 8L, 8N)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-A   ; AJQ: FWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-AB  ; AJQ: FWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-AC  ; AJQ: AWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-AM  ; ARY/AUQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-AQ  ; ARY/AUQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-B   ; AJQ: AWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-906-018-Q   ; AJQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-018-BX  ; AJQ: AWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-018-DX  ; AJQ: FWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-018-EX  ; AJQ: AWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-018-HX  ; AJQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-019-AX  ; AJQ: FWD (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-019-RX  ; ARY/AUQ: (8N)
+REDIRECT,06A-906-032-AJQ.LBL,8N0-997-019-SX  ; ARY/AUQ: (8N)
+;

@@ -1,0 +1,103 @@
+;
+; VAG-COM label file
+;
+; Audi A8 (4E)
+;
+; component: J104 - Brake Electronics (#03)
+;
+; p/n: 4E0 910 517 A/B
+;
+; includes measuring blocks
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 09/23/2004
+;
+; requires VAG-COM 402.3 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block informations
+;
+;---------------------------------------------------
+;
+;
+001,0,Wheel speed (largest value 20km/h (12.5 mph))
+001,1,Front,Left
+001,2,Front,Right
+001,3,Rear,Left
+001,4,Rear,Right
+;
+002,1,Brake test,switch
+002,2,Brake light,switch
+002,3,Parking,brake
+002,4,ESP-button,(center console)
+;
+003,1,Engine speed,(RPM)
+003,2,Engine torque,(Nm)
+003,3,Engine torque,loss (Nm)
+003,4,Throttle valve,angle (in %)
+;
+004,1,Standing time,,Display range: 0.0...255:59 h
+004,2,EDL-shut-off
+004,3,[N/A]
+004,4,[N/A]
+;
+005,1,Steering,angle,Display range: -720...+720 ° (front wheels straight max. tolerance +/-5 °)
+005,2,Rotation,rate,Display range: -69...+69 °/s
+005,3,Brake,pressure,Display range: 0...292 bar
+; -40 bar => short to Ground (GND)
+; 290 bar => short to B+
+005,4,Transverse,acceleration,Display range: -25...+25 m/s²
+;
+006,1,Voltage supply,terminal 15,Specified value: 9.8...17.4 V
+006,2,Valve,relay
+006,3,Activation,return flow pump
+006,4,Workshop,code
+;
+007,0,Installation position - see labelfile (test applies only to room temperature)
+; not OK => check brake temperature (test applies only to room temperature)
+;        => Check installation of sensor (fully inserted, firmly screwed in)
+;        => Check wheel bearing
+;        => Check tolerance of axle
+007,1,Front,Left,Display range: invalid/OK/not OK
+007,2,Front,Right,Display range: invalid/OK/not OK
+007,3,Rear,Left,Display range: invalid/OK/not OK
+007,4,Rear,Right,Display range: invalid/OK/not OK
+;
+008,0,Direction of rotation
+008,1,Front,Left,Display range: invalid/forward/reverse
+008,2,Front,Right,Display range: invalid/forward/reverse
+008,3,Rear,Left,Display range: invalid/forward/reverse
+008,4,Rear,Right,Display range: invalid/forward/reverse
+;
+009,1,Brake test,switch 
+009,2,Brake light,switch
+009,3,Brake,pressure
+009,4,[N/A]
+;
+080,0,Manufacturer work number and identification
+; Date of manufacture
+; Manufacturer changing status
+; Manufacturer test stand no.
+; Running manufacturer no.
+; e.g. BPA = Bosch factory Ansbach
+;
+081,0,Vehicle Identification Number (VIN)
+; Serial number
+; Type test number
+;
+125,0,CAN-Databus communication (Powertrain)
+125,1,Steering,angle sensor
+125,2,Transmission,Control Module
+125,3,Engine,Control Module
+125,4,Instrument,Cluster
+;
+126,0,CAN-Databus communication (Powertrain)
+126,1,Adaptive Cruise,Control (ACC)
+126,2,CAN-Gateway
+126,3,Electric Parking,Brake (EPB)
+126,4,Level Control,System
+;

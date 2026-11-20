@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текущая кодировка:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"
+        android:text="—" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Новая кодировка (десятичное число):"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etCoding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnApply"
+        style="@style/VagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Закодировать" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:text="Внимание! Неправильная кодировка может отключить оборудование автомобиля. Перед изменением запишите текущее значение."
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A6 (4B)
+;
+; Component: Navigation (#37)
+;
+; This is a redirect file that should
+; make all Audi A6 (4B)
+; Navigation systems work with 1 label file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4B-37.LBL
+; 4B-56.LBL
+; 8E-37.LBL
+; 8E-56.LBL
+; 8P-37.LBL
+; 8P-56.LBL
+; 8Z-37.LBL
+; 8Z-56.LBL
+; xx0-035-192-RNE.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 02/07/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,xx0-035-192-RNSE.LBL,4B0-035-192-??? ; RNS-E
+;

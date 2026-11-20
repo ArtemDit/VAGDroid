@@ -1,0 +1,35 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4B-01.LBL
+; 4B0-907-551-AZA.LBL  (2.7l T   @ 230 HP - AZA)
+;
+; created on 10/Jun/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 10/Jun/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AZA
+;
+; AZA 2.7l 169kW/230HP (4B)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,4B0-907-551-AZA.LBL,4B0-907-551-AB  ; AZA: Manual (4B)
+REDIRECT,4B0-907-551-AZA.LBL,4B0-907-551-AD  ; AZA: Automatic (4B)
+REDIRECT,4B0-907-551-AZA.LBL,4B0-907-551-AE  ; AZA: (4B)
+REDIRECT,4B0-907-551-AZA.LBL,4B0-907-551-R   ; AZA: Manual (4B)
+REDIRECT,4B0-907-551-AZA.LBL,4B0-907-551-S   ; AZA: Automatic (4B)
+;

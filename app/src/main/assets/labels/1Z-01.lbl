@@ -1,0 +1,29 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1Z-01.LBL
+; xxx-907-115-AXX.LBL (2.0l TE  @ 200 HP - AXX/BGB/BPJ/BPY/BWA)
+;
+; created on 08/Nov/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 08/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode BWA 2.0l 150kW/200HP
+;
+; BWA 2.0l 150kW/200HP (1Z)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,xxx-907-115-AXX.LBL,1Z0-907-115     ; BWA: (1Z)
+;

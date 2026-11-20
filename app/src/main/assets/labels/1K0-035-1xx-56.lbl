@@ -1,0 +1,141 @@
+;
+; VAG-COM Labelfile
+;
+; Seat Altea/Toledo (5P) / Skoda Octavia II (1Z)
+; VW Caddy (2K) / VW Fox (5Z) / VW Golf/Jetta (1K) / VW Touran (1T)
+;
+; Component: R - Radio (#56)
+;
+; includes measuring blocks, adaptation and coding
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1K-56.LBL
+; 1Z-56.LBL
+; 5M-56.LBL
+; 5P-56.LBL
+; 5Z-56.LBL
+; 1K0-035-1xx-56.LBL
+;
+; created on 23/Mar/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 15/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+001,1,Supply Voltage,(Terminal 30),Specification: 5...18 V
+001,2,Amplifier,Output,only if Amplifier installed
+001,3,Dimming of,Radio Illumination,CAN-Message (Specification: ca. 29...98 %
+001,4,S-Contact,Input Condition,CAN-Message
+;
+002,0,Telephone
+002,1,Component
+002,2,Mute Status
+002,4,Status
+;
+003,0,Speaker/Line-Out (Front Left)
+003,1,Location/Type
+003,2,Status
+;
+004,0,Speaker/Line-Out (Front Right)
+004,1,Location/Type
+004,2,Status
+;
+005,0,Speaker/Line-Out (Rear Left)
+005,1,Location/Type
+005,2,Status
+;
+006,0,Speaker/Line-Out (Rear Right)
+006,1,Location/Type
+006,2,Status
+;
+007,0,Remote Feed Antenna I
+007,1,Type
+007,2,Component
+007,3,Status
+;
+008,0,Signal Strength
+008,1,Signal Strength
+008,2,Signal Strength,Tuner I
+008,3,Signal Strength
+008,4,Signal Strength,Tuner II
+;
+010,0,Remote Feed Antenna II
+010,1,Type
+010,2,Component
+010,3,Status
+;
+011,0,Communication Status CD-Changer (R41)
+011,1,Component
+011,2,Status
+;
+016,0,CAN Connection Satelite Radio Receiver (SDARS)
+;
+025,0,Internal Control Module Malfunctions
+025,1,Control Module,Status
+; 01 = Button(s) Jam
+; 02 = Checksum Error ROM/EPROM/Flash-ROM
+; 03 = Writing Error EEPROM
+; 04 = CC-Drive (Casette) Error
+; 05 = CD/DVD-Drive Error
+; 09 = Malfunction at CD/DVD-Drive
+; 0A = Internal Communication (BUS)
+;
+080,0,Advanced Control Module Identification I
+;
+081,0,Advanced Control Module Identification II
+081,1,Serial Number
+;
+;
+;---------------------------------------------------
+;
+; adaptation information
+;
+;---------------------------------------------------
+;
+;
+A01,0,Reception Optimization
+A01,5,Reception Optimization
+A01,6,This channel allows optimization of the reception
+A01,7,behavior for areas with strong FM interference.
+A01,8, 
+A01,9,0 - Normal reception
+A01,10,1 - Optimized reception
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+C0,Radio (R) Coding
+C1,?xxxx - Treble Speaker Monitoring
+C2,1 - front and rear monitoring inactive
+C3,2 - front monitoring active - rear monitoring inactive
+C4,4 - front and rear monitoring active
+C5,x?xxx - Telephone Control
+C6,0 - no CAN-Telephone Control
+C7,2 - CAN-Telephone Control
+C8,xx?xx - Speaker channels
+C9,0 - no passive speakers (sound system)
+C10,2 - 2 passive speakers front and 0 passive speakers rear
+C11,4 - 4 passive speakers
+C12,xxx?x - Sound system correction
+C13,0 - No sound system (no correction)
+C14,1 - Sound system with cloth interior equipment
+C15,2 - Sound system with leather interior equipment
+C16,xxxx? - Radio configuration
+C17,+2 - CD-Changer
+C18,+4 - CAN-Secondary Display (Board Computer/large Display)
+;

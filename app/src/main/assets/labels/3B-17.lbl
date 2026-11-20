@@ -1,0 +1,35 @@
+;
+; VAG-COM Redirect File
+;
+; VW Passat (3B)
+;
+; Component: J285 - Instrument Cluster (#17)
+;
+; This is a redirect file that will hopefully
+; make all VW Passat (3B) instrument clusters
+; work with 3 label files.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 3B-17.LBL
+; 3B0-919-xxx.LBL
+; 3B0-920-xx2.LBL
+; 3B0-920-xx7.LBL
+; 3B0-920-xx9.LBL
+; 3B7-920-xx6.LBL
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 27/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,3B0-919-xxx.LBL,3B?-919-???-??? ; 3B-V-000 001 >> 3B-X-600 000
+REDIRECT,3B0-920-xx2.LBL,3B0-920-??2-??? ; 3B-Y-000 001 >>
+;REDIRECT,3B0-920-xx5.LBL,3B0-920-??5-??? ; >> 3B-1-400 000/3B-2P010 026
+;REDIRECT,3B0-920-xx6.LBL,3B0-920-??6-??? ; 3B-2-000 001/3B-2P010 027 >> 3B-200 000/3B-2P139 262
+REDIRECT,3B7-920-xx6.LBL,3B7-920-??6-??? ; 3B-200 001/3B-2P139 263 >> 3B-3-700 000
+REDIRECT,3B0-920-xx7.LBL,3B0-920-??7-??? ; 3B-200 001/3B-2P139 263 >> 3B-3-700 000
+REDIRECT,3B0-920-xx9.LBL,3B?-920-??9-??? ; 3B-4-000 001 >>
+;

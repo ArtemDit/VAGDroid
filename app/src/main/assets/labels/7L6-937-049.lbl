@@ -1,0 +1,152 @@
+;
+; VAG-COM label file
+;
+; VW Touareg (7L)
+;
+; component: Central electronics -J519-  (#09)
+;
+; ECU p/n: 7L6 937 049 ?
+;
+; includes measuring blocks and coding
+;
+; originally posted by Ross-Tech (http://www.ross-tech.com)
+; measuring groups added by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modified: 10/18/2004
+;
+; ready for VAG-COM 402.3 and above
+;
+;
+;---------------------------------------------------
+;
+; measuaring block informations
+;
+;---------------------------------------------------
+;
+;
+001,0,Light switches
+001,1,Zero position,,Specified value: off/on
+001,2,Parking light,,Specified value: off/on
+001,3,Low beam,headlight,Specified value: off/on
+001,4,Assistance,driving light,Specified value: off/on
+;
+002,0,Light switches
+002,1,Rear fog light,,Specified value: off/on/not installed
+002,2,Fog light,,Specified value: off/on/not installed
+002,3,Back-up light,,Specified value: off/on
+002,4,CAN selector,lever information
+;
+003,0,Turn signals && Parking lights
+003,1,Left turn,signal lever,Specified value: active/inactive
+003,2,Right turn,signal lever,Specified value: active/inactive
+003,3,Left parking,light switch,Specified value: active/inactive
+003,4,Right parking,light switch,Specified value: active/inactive
+;
+004,1,Headlamp,flasher switch,Specified value: active/inactive
+004,2,High beam,switch,Specified value: active/inactive
+004,3,Emergency,flasher switch,Specified value: active/inactive
+004,4,Potentiometer,terminal 58d,Specified value: 0...100 %
+;
+005,1,Front washing,switch,Specified value: active/inactive
+005,2,Rear washer,switch,Specified value: active/inactive
+005,3,Headlight washer,system switch,Specified value: active/inactive/n. installed
+005,4,Horn switch,,Specified value: active/inactive
+;
+006,1,Engine hood,switch,Specified value: on/off
+006,2,Headlight aim,control malfunct,Specified value: on/off
+006,3,Trailer,detected,Specified value: Trailer yes/Trailer no
+006,4,Assistance,driving light,Specified value: off/on
+;
+007,0,Voltage
+007,1,System,battery,Specified value: 6...15 V
+007,2,Starter,battery,Specified value: 6...15 V
+;
+008,0,Mirror adjustment switch
+008,1,Y-Axis,(minus),Specified value: active/inactive
+008,2,Y-Axis,(plus),Specified value: active/inactive
+008,3,X-Axis,(minus),Specified value: active/inactive
+008,4,X-Axis,(plus),Specified value: active/inactive
+;
+009,0,Mirror system
+009,1,Left mirror,selection,Specified value: off/on
+009,2,Right mirror,selection,Specified value: off/on
+009,3,Folding in,mirror,Specified value: off/on
+009,4,Heated mirror,switch,Specified value: off/on
+;
+010,1,Intervention,load management,Specified value: aktive/inaktive
+010,2,max. reached,shut-off priority,Specified value: 0...254
+010,3,Short-distance,operations,Specified value: 0...254
+010,4,Terminal L,,Specified value: off/on
+;
+011,1,Critical time,fraction,Specified value: 0...100 %
+011,2,Current shut-off,priority,Specified value: 0...254
+;
+012,1,Driver door,rotary trap,Specified value: Door open/Door closed
+012,2,Passenger door,rotary trap,Specified value: Door open/Door closed
+012,3,Rotary trap,LR door,Specified value: Door open/Door closed
+012,4,Rotary trap,RR door,Specified value: Door open/Door closed
+;
+013,1,Rear lid,rotary trap,Specified value: open/closed
+013,2,Rear window,rotary trap,Specified value: open/closed
+;
+014,0,Terminal status
+014,1,Terminal 15,(CAN-signal),Specified value: Terminal 15 on/Klemme 15 off
+014,2,Terminal 15,(HW-signal),Specified value: Terminal 15 on/Klemme 15 off
+014,3,Terminal 75/X,(CAN-signal),Specified value: Terminal X on/Klemme X off
+;
+015,1,Starter wire,short circuit,Specified value: on/off
+015,2,Terminal S,(CAN-signal),Specified value: ja/no
+015,3,Terminal S,(HW-signal),Specified value: yes/no/n. installed
+015,4,Footwell lighting,dimming value,Specified value: 0...100 %
+;
+016,1,Central switch,interior light,Specified value: active/inactive
+016,2,Potentiometer,footwell lights,Specified value: 0...100 %
+;
+017,0,Low/high beams
+017,1,Left low beam,headlight,Specified value: Ok./n.Ok/please wait
+017,2,Right low beam,headlight,Specified value: Ok/n.Ok/please wait
+017,3,Left high beam,,Specified value: Ok/n.Ok/please wait
+017,4,Right high beam,,Specified value: Ok/n.Ok/please wait
+;
+018,0,Turn signals/Position lights
+018,1,Turn signal,lights left,Specified value: Ok/n.Ok
+018,2,Turn signal,lights right,Specified value: Ok/n.Ok
+018,3,Left position,light,Specified value: Ok/n.Ok
+018,4,Right position,light,Specified value: Ok/n.Ok
+;
+019,1,Fog light,left/right,Specified value: Ok/n.Ok
+019,2,Auxiliary high,beam headlights,Specified value: Ok/n.Ok
+019,3,Left Cornering,Lamp,Specified value: Ok/n.Ok
+019,4,Right Cornering,Specified value: Lamp,Ok/n.Ok
+;
+;
+;
+;---------------------------------------------------
+;
+; coding informations
+;
+;---------------------------------------------------
+;
+;
+C00,J519 - Central Electric
+C01,     +1 DRLs always ON, not optional in MFI
+C02,     +2 Driving Light for USA/Canada (Xenon Low Beams Off when High Beams are On)
+C03,     +4 Interior Comfort Lighting Enabled
+C04,     +8 Rain & Light Sensors Enabled
+C05,    +16 Coming Home Lights Enabled
+C06,    +32 Rear Fog Lamps Enabled
+C07,    +64 Front Fog Lamps Enabled
+C08,   +128 Xenon Lighting Installed/Enabled
+C09,   +256 Marker Lights for USA/Canada Enabled
+C10,   +512 [Function Unknown]
+C11,  +1024 Headlight Washers Enabled
+C12,  +2048 Electric Fuel Pump Relay Block (Gasoline Engines Only!)
+C13,  +4096 Wake-up function Enabled (for Air Suspension)
+C14,  +8192 Second Battery Enabled
+C15  +16384 Auxilliary  Battery Enabled (V10 TDI only)
+C16, +32768 Low-line Seat Heating Enabled (No Memory Seats Only)
+C17, +65536 Electric Load Management Enabled
+C18,+131072 Rear Fog Disabled when Off-Roads Suspension Set (Japan Only)
+C19, 
+C20,Coding is the sum of the individual options
+;

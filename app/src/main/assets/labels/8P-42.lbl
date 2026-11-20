@@ -1,0 +1,21 @@
+;
+; VAG-COM Redirect File
+;
+; Component: J386 - Door Electronics Driver (#42)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8P-42.LBL
+; 8P0-959-801-MIN.LBL
+; 8P0-959-801-MAX.LBL
+;
+; created on 28/Sep/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 09/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,8P0-959-801-MIN.LBL,8P0-959-801-A   ; MIN
+REDIRECT,8P0-959-801-MIN.LBL,8P0-959-801-H   ; MIN
+;

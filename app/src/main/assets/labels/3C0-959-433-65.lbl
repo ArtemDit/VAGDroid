@@ -1,0 +1,173 @@
+;
+; VAG-COM Labelfile
+;
+; VW Passat (3C)
+;
+; Component: J502 - Tire Pressure Monitoring (#65)
+;
+; P/N: 3C0-959-433-???
+;
+; includes measuring blocks, security access, adaptation and coding
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 3C-65.LBL
+; 3C0-959-433-65.LBL
+;
+; created on 17/Dec/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 17/Dec/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+001,0,Front Left Wheel Status I
+001,1,Position
+001,2,Wheel,Temperature
+001,3,Wheel Pressure,(actual)
+001,4,Wheel Pressure,(specified)
+;
+002,0,Front Left Wheel Status II
+002,1,Position
+002,2,Remaining,Battery Life (Month)
+;
+003,0,Front Left Wheel Status III
+003,1,Transmitter Status
+;
+004,0,Front Right Wheel Status I
+004,1,Position
+004,2,Wheel,Temperature
+004,3,Wheel Pressure,(actual)
+004,4,Wheel Pressure,(specified)
+;
+005,0,Front Right Wheel Status II
+005,1,Position
+005,2,Remaining,Battery Life (Month)
+;
+006,0,Front Right Wheel Status II
+006,1,Transmitter Status
+;
+007,0,Rear Left Wheel Status I
+007,1,Position
+007,2,Wheel,Temperature
+007,3,Wheel Pressure,(actual)
+007,4,Wheel Pressure,(specified)
+;
+008,0,Rear Left Wheel Status II
+008,1,Position
+008,2,Remaining,Battery Life (Month)
+;
+009,0,Rear Left Wheel Status III
+009,1,Transmitter Status
+;
+010,0,Rear Right Wheel Status I
+010,1,Position
+010,2,Wheel,Temperature
+010,3,Wheel Pressure,(actual)
+010,4,Wheel Pressure,(specified)
+;
+011,0,Rear Right Wheel Status II
+011,1,Position
+011,2,Remaining,Battery Life (Month)
+;
+012,0,Rear Right Wheel Status III
+012,1,Transmitter Status
+;
+016,0,Wheel Status (from last Received Wheel ID) I
+016,1,Wheel Electronics Status
+;0.000.000.000 Status 00h UB. niO 0.00bar, ,
+; Digit  1-14 = Identification Number
+; Digit 15-25 = Status
+;               x0h = Storage Mode
+;               x1h = Standard Sending Mode
+;               x2h = Fast Sending Mode
+;               x3h = Temperature Shut-Off
+;               x4h (and above) = Faulty
+; Digit 26-33 = Battery Status
+; Digit 34-40 = Current Pressure
+;
+017,0,Wheel Status (from last Received Wheel ID) II
+017,1,Wheel,Temperature
+017,2,Wheel Pressure,(actual)
+017,3,Wheel,Acceleration
+;
+020,1,Voltage Supply
+020,2,Vehicle Speed
+020,3,Outside Temperature
+;
+021,0,Average Outside Temperature
+021,1,Wheel 1
+021,2,Wheel 2
+021,3,Wheel 3
+021,4,Wheel 4
+;
+022,0,Current Load
+022,1,Current Load
+;
+025,0,Current Tire Set
+025,1,Current,Tire Set
+;
+;
+;---------------------------------------------------
+;
+; security access information
+;
+;---------------------------------------------------
+;
+;
+S00,Tire Pressure Monitoring (J502) Security Access
+S01,01503 - General Adaptation "Enabling"
+;
+;
+;---------------------------------------------------
+;
+; adaptation information
+;
+;---------------------------------------------------
+;
+;
+A005,0,Specified Tire Pressure at Full Load (Front Axle)
+A005,5,Specified Tire Pressure at Full Load (Front Axle)
+A005,6,The specified tire pressure is beeing entered
+A005,7,without a comma. So 2.4 bar is entered as 24.
+;
+A006,0,Specified Tire Pressure at Partial Load (Front Axle)
+A006,5,Specified Tire Pressure at Partial Load (Front Axle)
+A006,6,The specified tire pressure is beeing entered
+A006,7,without a comma. So 2.4 bar is entered as 24.
+;
+A007,0,Specified Tire Pressure at Full Load (Rear Axle)
+A007,5,Specified Tire Pressure at Full Load (Rear Axle)
+A007,6,The specified tire pressure is beeing entered
+A007,7,without a comma. So 2.4 bar is entered as 24.
+;
+A008,0,Specified Tire Pressure at Partial Load (Rear Axle)
+A008,5,Specified Tire Pressure at Partial Load (Rear Axle)
+A008,6,The specified tire pressure is beeing entered
+A008,7,without a comma. So 2.4 bar is entered as 24.
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+C00,Tire Pressure Monitoring (J502) Coding
+C01,Rest of World (RoW):
+C02,0161211 = Factory
+C03,0161210 = Service (for manual input of specified pressure)
+C04, 
+C05,North America (NAR):
+C06,0100101 = Factory
+C07,0100100 = Service (for manual input of specified pressure)
+;

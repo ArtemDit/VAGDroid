@@ -1,0 +1,33 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A4 (8E)
+;
+; Component: Radio (#56)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8E-37.LBL
+; 8E-56.LBL
+; 8E0-035-xxx-56.LBL
+; xx0-035-192-RNSE.LBL
+;
+; created on 07/Feb/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 25/Aug/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;REDIRECT,xx0-035-192-RNSD.LBL,8E0-035-192-B   ; RNS-D
+;
+REDIRECT,xx0-035-192-RNSE.LBL,8E0-035-192-C   ; RNS-E
+REDIRECT,xx0-035-192-RNSE.LBL,8E0-035-192-D   ; RNS-E
+REDIRECT,xx0-035-192-RNSE.LBL,8E0-035-192-E   ; RNS-E
+REDIRECT,xx0-035-192-RNSE.LBL,8E0-035-192-F   ; RNS-E
+REDIRECT,xx0-035-192-RNSE.LBL,8E0-035-192-H   ; RNS-E
+;
+REDIRECT,8E0-035-xxx-56.LBL,8E0-035-152-???  ; Chorus II
+REDIRECT,8E0-035-xxx-56.LBL,8E0-035-186-???  ; Concert II
+;

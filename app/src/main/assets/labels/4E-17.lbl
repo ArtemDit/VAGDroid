@@ -1,0 +1,21 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A8 (4E)
+;
+; Component: J285 - Instrument Cluster (#17)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4E-17.LBL
+; 4E0-910-xxx.LBL
+;
+; created on 22/Sep/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 26/May/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,4E0-910-xxx.LBL,4E0-910-???-???
+;

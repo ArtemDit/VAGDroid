@@ -1,0 +1,74 @@
+;
+; VAG-COM Labelfile
+;
+; VW Passat (3C)
+;
+; Component: J136 - Driver's Seat Adjustment (#36)
+;
+; P/N: 3C0-959-760-???
+;
+; includes measuring blocks
+;
+; created on 17/Dec/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 18/Dec/2005
+;
+; requires VAG-COM 402.3 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+001,0,Current Values (Longitudinal && Backrest Rake Adjustment)
+001,1,Longitudinal Seat,Adjustment Button
+001,2,Longitudinal Seat,Adjustment,Display Range: 0...65535
+001,3,Backrest Rake,Adjustment Button
+001,4,Backrest Rake,Adjustment,Display Range: 0...65535
+;
+002,0,Current Values (Seat Height && Seat Rake Adjustment)
+002,1,Seat Height,Adjustment Button
+002,2,Seat Height,Adjustment,Display Range: 0...65535
+002,3,Seat Rake,Adjustment Button
+002,4,Seat Rake,Adjustment,Display Range: 0...65535
+;
+003,0,Current Values (Lumbar Height && Lumbar Fore/Aft Adjustment)
+003,1,Lumbar Height,Adjustment Button
+003,2,Lumbar Height,Adjustment,Display Range: 0...65535
+003,3,Lumbar Fore/Aft,Adjustment Button
+003,4,Lumbar Fore/Aft,Adjustment,Display Range: 0...65535
+;
+007,0,Seat Memory I
+007,1,Memory Position,Button 1,Display Range: Operated/Not Oper.
+007,2,Memory Position,Button 2,Display Range: Operated/Not Oper.
+007,3,Memory Position,Button 3 (E220),Display Range: Operated/Not Oper.
+;
+008,0,Seat Memory II
+008,1,Memory,Set-Button,Display Range: Operated/Not Oper.
+008,2,Memory Function,,Display Range: Active/Not Active
+008,4,Initialisation,,Display Range: Learned/Erased
+;
+009,0,Terminal Status
+009,1,Voltage,Terminal 30,Specification: 9.0...15.25 V
+009,2,Status,Terminal X,Display Range: ON/OFF
+009,3,Status,Terminal 15,Display Range: Term 15 On/Term 15 Off
+009,4,Status,Terminal S,Display Range: ON/OFF
+;
+010,1,Driver Door,,Display Range: Open/Closed
+010,2,Key Number
+010,3,Steering Type,,Display Range: Left/Right
+010,4,Vehicle Speed
+;
+011,0,Current Values (Seat Depth)
+011,1,Seat Depth,Adjustment Button
+011,2,Seat Depth,Adjustment,Display Range: 0...65535
+;
+012,0,Massage
+012,1,Massage Button,,Display Range: ON/OFF
+012,2,Massage Function,,Display Range: Not Active/Active
+;
+080,0,Advanced Control Module Identification I
+;

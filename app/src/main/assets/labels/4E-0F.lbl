@@ -1,0 +1,24 @@
+;
+; VAG-COM Labelfile
+;
+; Aud A6 (4F)
+;
+; Component: R146 - Digital Radio (#0F) - XM
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4E-0F.LBL
+; 4E0-910-593-SIR.LBL
+; 4E0-910-593-XM.LBL
+;
+; created on 13/Oct/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 13/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;REDIRECT,4E0-910-593-SIR.LBL,4E0-910-593
+;
+REDIRECT,4E0-910-593-XM.LBL,4E0-910-593-E
+;

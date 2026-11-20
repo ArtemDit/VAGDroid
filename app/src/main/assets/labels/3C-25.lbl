@@ -1,0 +1,21 @@
+;
+; VAG-COM Redirect File
+;
+; VW Passat (3C)
+;
+; Component: Immobilizer (#25)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 3C-25.LBL
+; 3C0-959-433-25.LBL
+;
+; created on 27/Oct/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 27/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,3C0-959-433-25.LBL,3C0-959-433-???
+;

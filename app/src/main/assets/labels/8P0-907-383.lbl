@@ -1,0 +1,57 @@
+;
+; VAG-COM Labelfile
+;
+; Audi A3 (8P) / VW Golf/Jetta (1K/5M) / VW Touran (1T)
+; Seat Altea/Toledo (5P) / Seat Leon (1P) / Skoda Octavia (1Z)
+;
+; Component: J345 - Trailer (#69)
+;
+; P/N: 8P0-907-383
+;
+; includes measuring blocks, coding and selective output tests
+;
+; created on 24/Oct/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 24/Oct/2005
+;
+; requires VAG-COM 505.1 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+
+;
+;
+;---------------------------------------------------
+;
+; selective output test information
+;
+;---------------------------------------------------
+;
+;
+T1019,Relay (Terminal 30G)
+T2562,Brake Lamps (Trailer)
+T2564,Tail Lamps Left (Trailer - M60)
+T2563,Tail Lamps Right (Trailer - M61)
+T2566,Turn Signals Left (Trailer - M62)
+T2565,Turn Signals Right (Trailer - M63)
+T2567,Rear Fog Lamps (Trailer - M64)
+T2568,Back-Up Lamps (Trailer)
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+C00,Trailer (J345) Coding
+C01,0000001 - Rest of World (RoW)
+C02,0000002 - North America (USA/Canada)
+;

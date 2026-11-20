@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите кузов и запустите сканирование"
+        android:padding="6dp" />
+
+    <Button
+        android:id="@+id/btnChassis"
+        style="@style/VagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Кузов: All Long" />
+
+    <Button
+        android:id="@+id/btnStart"
+        style="@style/VagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Начать сканирование" />
+
+    <Button
+        android:id="@+id/btnStop"
+        style="@style/VagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Остановить" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:textIsSelectable="true" />
+    </ScrollView>
+</LinearLayout>

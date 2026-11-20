@@ -1,0 +1,146 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 03-01.LBL
+; 06-01.LBL
+; 1L-01.LBL
+; 6K-01.LBL
+; 030-906-027-AER.LBL  (1.0l E   @  50 HP - AER/ALL)
+; 030-906-027-AEX.LBL  (1.4l E   @  54 HP - AEX)
+; 030-906-027-AEX.LBL  (1.4l E   @  60 HP - AEX/AKV/ANX/APQ)
+; 032-906-030-AEE.LBL  (1.6l E   @  75 HP - AEE/AHS/ALM)
+; 036-906-034-APE.LBL  (1.4l E   @ 75/100 HP - APE/AQQ/AUA/AUB/BBY/BBZ/BKY)
+; 037-906-025-ADY.LBL  (2.0l E   @ 115 HP - ADY/AGG/AKR)
+; 037-906-025-AFT.LBL  (1.6l E   @ 100 HP - AFT/AKS)
+; 06A-906-019-AEH.LBL  (1.6l E   @ 100 HP - AEH)
+; 06A-906-033-APF.LBL  (1.6l E   @ 100 HP - APF)
+; 06A-906-033-AVU.LBL  (1.6l E   @ 102 HP - AVU)
+;
+; created on 01/Oct/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 15/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AEE/AHS/ALM
+;
+; AEE/AHS/ALM 1.6l 55kW/75HP  (6K, 9K)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,032-906-030-AEE.LBL,6K0-906-030-A  ; AEE: (6K)
+REDIRECT,032-906-030-AEE.LBL,6K0-906-030-B  ; AEE: (9K)
+REDIRECT,032-906-030-AEE.LBL,6K0-906-030-D  ; AEE/ALM: (6K)
+REDIRECT,032-906-030-AEE.LBL,6K0-906-030-E  ; ALM: (6K)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AEH/AKL
+;
+; AEH/AKL 1.6l 74kW/100HP (6K)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,06A-906-019-AEH.LBL,6K0-906-019     ; AEH/AKL: (6K)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode APF
+;
+; APF 1.6l 74kW/100HP (6K)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,06A-906-033-APF.LBL,6K0-906-033     ; APF: (6K)
+REDIRECT,06A-906-033-APF.LBL,6K0-906-033-A   ; APF: (6V)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AUA/APE
+;
+; APE 1.4l 55kW/75HP  (6K)
+; AQQ 1.4l 74kW/100HP (6K)
+; AUA 1.4l 55kW/75HP  (6K, 9K)
+; AUB 1.4l 74kW/100HP (6K)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,036-906-034-APE.LBL,6K0-906-034    ; APE/AUA: (6K)
+REDIRECT,036-906-034-APE.LBL,6K0-906-034-A  ; AUA: (9K)
+REDIRECT,036-906-034-APE.LBL,6K0-906-034-B  ; AQQ: (6K)
+REDIRECT,036-906-034-APE.LBL,6K0-906-034-D  ; AUA: (6K)
+REDIRECT,036-906-034-APE.LBL,6K0-906-034-F  ; AUB: (6K)
+REDIRECT,036-906-034-APE.LBL,6K0-998-034    ; APE/AUA: (6K)
+REDIRECT,036-906-034-APE.LBL,6K0-998-034-D  ; AUA: (6K)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AER 1.0l 37kW/50HP
+;
+; AER 1.0l 37kW/50HP (6K)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,030-906-027-AER.LBL,6K0-906-027-D  ; AER (6K)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AEX/AKV/ANX/APQ 44kW/60HP
+;
+; AEX 1.4l 44kW/60HP (6K, 9K)
+; AKV 1.4l 44kW/60HP (6K, 9K)
+; ANX 1.4l 44kW/60HP (6K, 9K)
+; APQ 1.4l 44kW/60HP (6K, 9K)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,030-906-027-AEX.LBL,6K0-997-027-AX ; AEX/ANX/APQ (6K, 9K)
+REDIRECT,030-906-027-AEX.LBL,6K0-997-027-BX ; AEX/AKV/ANX/APQ (6K, 9K)
+REDIRECT,030-906-027-AEX.LBL,6K0-997-027-X  ; AEX/ANX/APQ (6K, 9K)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode ADY/AGG/AKR 2.0l 85kW/115HP
+;
+; ADY/AGG/AKR 2.0l 85kW/115HP (1L, 6K, 7M)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,037-906-025-ADY.LBL,6K0-906-025-D  ; AGG (6K)
+;
+;
+;-------------------------------------------------------------
+;
+; Enginecode AFT/AKS 1.6l 74kW/100HP
+;
+; AFT/AKS 1.6l 74kW/100HP (1L, 1H, 6K, 35, 6N)
+;
+;-------------------------------------------------------------
+;
+;
+REDIRECT,037-906-025-AFT.LBL,6K0-906-025-A  ; AFT/AKS (1L)
+REDIRECT,037-906-025-AFT.LBL,6K0-906-025-E  ; AFT (6K)
+REDIRECT,037-906-025-AFT.LBL,6K0-906-025-G  ; AFT: Automatic (6N)
+REDIRECT,037-906-025-AFT.LBL,6K0-906-025-L  ; AFT (6K)
+;

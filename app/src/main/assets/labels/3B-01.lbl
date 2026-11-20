@@ -1,0 +1,45 @@
+;
+; VAG-COM Redirect File
+;
+; Component: Engine (#01)
+;
+; This is a redirect file for engine modules.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 3B-01.LBL
+; 3B0-907-557-AHL.LBL (1.6l     @ 100 HP - AHL/ARM)
+;
+; created on 12/May/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 13/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AHL/ARM 1.6l 74kW/100HP
+;
+; AHL/ARM 1.6l 74kW/100HP (8D, 3B)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557     ; AHL: (3B)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-A   ; AHL: (8D)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-B   ; AHL: (8D)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-C   ; AHL: (3B)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-D   ; AHL: (3B)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-E   ; AHL: (8D)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-J   ; AHL/ARM: (3B)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-L   ; AHL/ARM: (8D)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-M   ; AHL: (3B)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-N   ; AHL/ARM: (8D)
+REDIRECT,3B0-907-557-AHL.LBL,3B0-907-557-P   ; AHL/ARM: (3B)
+;
+REDIRECT,3B0-907-557-ALT.LBL,3B0-907-557-Q   ; ALT: (3B)
+REDIRECT,3B0-907-557-ALT.LBL,3B0-907-557-R   ; ALT: (3B)
+REDIRECT,3B0-907-557-ALT.LBL,3B0-907-557-S   ; ALT: (3B)
+;

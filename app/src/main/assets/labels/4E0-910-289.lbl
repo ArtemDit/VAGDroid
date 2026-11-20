@@ -1,0 +1,141 @@
+;
+; VAG-COM label file
+;
+; Audi A8 (4E)
+;
+; component: J393 - Central locking (#46)
+;
+; p/n: 
+;
+; includes adaptation and coding
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1J-17.LBL
+; 1J0-919-xxx.LBL
+; 1J0-920-xx0.LBL
+; 1J0-920-xx6.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 09/26/2004
+;
+; requires VAG-COM 402.3 or newer
+;
+;
+;---------------------------------------------------
+;
+; Adaptation informations
+;
+;---------------------------------------------------
+;
+;
+A01,0,Selective Central Locking functions/personalization - Key 1
+A01,5,Selective Central Locking functions/personalization - Key 1
+A01,6,+0001 - Passenger door
+A01,7,+0002 - Left rear door
+A01,8,+0004 - Right rear door
+A01,9,+0008 - Luggage compartment
+A01,10,+0016 - Drivers door
+A01,11,+0256 - Auto lock
+A01,12,+0512 - Comfort opening front window regulators
+A01,13,+1024 - Comfort opening rear window regulators
+A01,14,+2048 - Sunroof opening
+A01,15,+4096 - Rear shades automatically extracting
+;
+A02,0,Selective Central Locking functions/personalization - Key 2
+A02,5,Selective Central Locking functions/personalization - Key 2
+A02,6,+0001 - Passenger door
+A02,7,+0002 - Left rear door
+A02,8,+0004 - Right rear door
+A02,9,+0008 - Luggage compartment
+A02,10,+0016 - Drivers door
+A02,11,+0256 - Auto lock
+A02,12,+0512 - Comfort opening front window regulators
+A02,13,+1024 - Comfort opening rear window regulators
+A02,14,+2048 - Sunroof opening
+A02,15,+4096 - Rear shades automatically extracting
+;
+A03,0,Selective Central Locking functions/personalization - Key 3
+A03,5,Selective Central Locking functions/personalization - Key 3
+A03,6,+0001 - Passenger door
+A03,7,+0002 - Left rear door
+A03,8,+0004 - Right rear door
+A03,9,+0008 - Luggage compartment
+A03,10,+0016 - Drivers door
+A03,11,+0256 - Auto lock
+A03,12,+0512 - Comfort opening front window regulators
+A03,13,+1024 - Comfort opening rear window regulators
+A03,14,+2048 - Sunroof opening
+A03,15,+4096 - Rear shades automatically extracting
+;
+A04,0,Selective Central Locking functions/personalization - Key 4
+A04,5,Selective Central Locking functions/personalization - Key 4
+A04,6,+0001 - Passenger door
+A04,7,+0002 - Left rear door
+A04,8,+0004 - Right rear door
+A04,9,+0008 - Luggage compartment
+A04,10,+0016 - Drivers door
+A04,11,+0256 - Auto lock
+A04,12,+0512 - Comfort opening front window regulators
+A04,13,+1024 - Comfort opening rear window regulators
+A04,14,+2048 - Sunroof opening
+A04,15,+4096 - Rear shades automatically extracting
+;
+A14,0,Inclination sensor
+A14,5,Alarm threshold
+A14,6,200 - 100% = 0.0°
+A14,7,180 - 90% = 0.1°
+A14,8,160 - 80% = 0.2°
+A14,9,140 - 70% = 0.3°
+A14,10,120 - 60% = 0.4°
+A14,11,100 - 50% = 0.5°
+;
+A60,0,Personalization
+A60,5,Personalization
+A60,6,Activates the settings/changes in the CAR-Menu (central locking/windows)
+A60,7,from the Multi Media Interface (MMI)
+;
+A61,0,Comfort functions
+A61,5,Comfort functions
+A61,6,+001 - Comfort closing for window regulators via remote control
+A61,7,+002 - Comfort opening for window regulators via remote control
+A61,8,+004 - Comfort closing for sunroof via remote control
+A61,9,+008 - Comfort opening for sunroof via remote control
+A61,10,+016 - Comfort closing for window regulator via window regulator switch drivers door
+A61,11,+032 - Comfort opening for window regulator via window regulator switch drivers door
+A61,12,+064 - Comfort locking for sunroof via window regulator switch drivers door
+A61,13,+128 - Comfort opening for sunroof via window regulator switch drivers door
+A61,14,+256 - Comfort closing for window regulators via lock cylinder
+A61,15,+512 - Comfort closing for sunroof via lock cylinder
+;
+A62,0,Central locking functions
+A62,5,Central locking functions
+A62,6,1 - Central locking closed blinking
+A62,7,2 - Central locking open blinking
+A62,8,4	- Term. 87 USA Logic
+;
+;
+;---------------------------------------------------
+;
+; Coding informations
+;
+;---------------------------------------------------
+;
+;
+C0,J393 - Central control module for comfort system
+C1,+0001 - Tamper alarm (0 = 1 Tamper alarm / 10 = 10 Tamper alarms (PR-B09))
+C2,+0002 - Logic anti-theft system (0 = RoW-logic/Thatcham / 2 = USA-logic or no anti-theft installed)
+C3,+0004 - Selective Central Locking (PR-4K2/4K6/4K7)
+C4,+0008 - Anti-theft warning system (PR-7AH/7AL)
+C5,+0016 - Inclination sensor (PR-7AL)
+C6,+0032 - Rear Lid Control Module -J605- (PR-4E7/4E9)
+C7,+0064 - Comfort function via remote
+C8,+0128 - Right hand steering (PR-L0R)
+C9,+0512 - Rear shades (PR-3Y2/3Y5/3Y8)
+C10,+1048 - Confirmation anti-theft warning system horn (PR-A8U)
+C11,+2048 - RoW/USA - Rear Lights (0 = ECE lights / 2048 = SAE lights)
+C12,+4096 - Foot well lights (PR-QQ1/QQ3)
+;

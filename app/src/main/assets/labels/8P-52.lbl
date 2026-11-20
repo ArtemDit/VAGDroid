@@ -1,0 +1,21 @@
+;
+; VAG-COM Redirect File
+;
+; Component: J387 - Door Electronics Passenger (#52)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8P-52.LBL
+; 8P0-959-802-MIN.LBL
+; 8P0-959-802-MAX.LBL
+;
+; created on 28/Sep/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 09/Nov/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,8P0-959-802-MIN.LBL,8P0-959-802-A   ; MIN
+REDIRECT,8P0-959-802-MIN.LBL,8P0-959-802-H   ; MIN
+;

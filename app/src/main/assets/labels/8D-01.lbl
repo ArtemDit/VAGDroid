@@ -1,0 +1,73 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A4 (8D) / VW Passat (3B)
+;
+; Component: Engine electronics (#01)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8D-01.LBL
+; 8D0-907-557-ADP.LBL  (1.6l     @ 100 HP - ADP) < 06/1996
+; 8D0-907-557-ADR.LBL  (1.8l     @ 125 HP - ADR) < 06/1996
+; 8D0-907-557-AEB.LBL  (1.8l T   @ 150 HP - AEB) < 06/1996
+; 8D0-907-559-AEB.LBL  (1.8l T   @ 150 HP - AEB) NAR
+; 8D0-907-55x-AEB.LBL  (1.8l T   @ 150 HP - ADP/ADR/AEB) 07/1996 >
+;
+; created on 30/Oct/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 07/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AEB/ADP/ADR (< 06/1996)
+;
+; ADP 1.6l  74kW/100HP (8D)
+; ADR 1.8l  92kW/125HP (8D)
+; AEB 1.8l 110kW/150HP (8D)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,8D0-907-557-ADP.LBL,8D0-907-557-B   ; ADP: (8D)
+REDIRECT,8D0-907-557-ADP.LBL,8D0-907-557-H   ; ADP: (8D)
+;
+REDIRECT,8D0-907-557-ADR.LBL,8D0-907-557-C   ; ADR: (8D)
+REDIRECT,8D0-907-557-ADR.LBL,8D0-907-557-CX  ; ADR: (8D)
+;
+REDIRECT,8D0-907-557-AEB.LBL,8D0-907-557     ; AEB: (8D)
+REDIRECT,8D0-907-557-AEB.LBL,8D0-907-557-E   ; AEB: Automatic (8D)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AEB/ADP/ADR (07/1996 >)
+;
+; ADP 1.6l  74kW/100HP (8D)
+; ADR 1.8l  92kW/125HP (8D)
+; AEB 1.8l 110kW/150HP (8D)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,8D0-907-55x-AEB.LBL,8D0-907-557-P   ; AEB: Manual (8D)
+REDIRECT,8D0-907-55x-AEB.LBL,8D0-907-557-S   ; ADR: (8D)
+REDIRECT,8D0-907-55x-AEB.LBL,8D0-907-557-T   ; AEB: (8D)
+REDIRECT,8D0-907-55x-AEB.LBL,8D0-907-558-A   ; ADP: (8D)
+;
+;
+;------------------------------------------------------------
+;
+; Enginecode AEB (NAR)
+;
+; AEB 1.8l 110kW/150HP (8D)
+;
+;------------------------------------------------------------
+;
+;
+REDIRECT,8D0-907-559-AEB.LBL,8D0-907-559-C   ; AEB: Automatic (8D)
+;

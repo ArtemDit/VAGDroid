@@ -1,0 +1,26 @@
+;
+; VAG-COM Redirect File
+;
+; VW Phaeton (3D)
+;
+; Component: Sound System (#47)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 3D-47.LBL
+; 3D0-035-4xx-47.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 12/01/2004
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,3D0-035-4xx-47.LBL,3D0-035-456-???
+REDIRECT,3D0-035-4xx-47.LBL,3D0-035-465-???
+REDIRECT,3D0-035-4xx-47.LBL,3D0-035-466-???
+;

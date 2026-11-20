@@ -1,0 +1,21 @@
+;
+; VAG-COM Redirect File
+;
+; Component: J285 - Instrument Cluster (#17)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8P-17.LBL
+; 8P-25.LBL
+; 8P0-920-xxx-17.LBL
+; 8P0-920-xxx-25.LBL
+;
+; created on 07/Sep/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 18/Aug/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,8P0-920-xxx-17.LBL,8P0-920-???-???
+;

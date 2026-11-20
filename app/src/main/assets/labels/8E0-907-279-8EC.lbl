@@ -1,0 +1,200 @@
+;
+; VAG-COM label file
+;
+; Audi A4 (8EC/8ED)
+;
+; Component: J519 - Central Clectronic (#09)
+;
+; P/N: 8E0-907-279-???
+;
+; includes measuring blocks, adaptation and coding
+;
+; created on 14/Apr/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 06/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block information
+;
+;---------------------------------------------------
+;
+;
+001,0,(Output Signals)
+001,1,Supply Voltage
+001,2,Horn,,Display Range: ON/OFF
+001,3,Status,Terminal 75,Display Range: ON/OFF
+001,4,Rotary Light Switch,Supply,Display Range: ON/OFF
+;
+002,0,Turn Signals (Output Signals)
+002,1,Turn Signals,Front Left,Display Range: 0.0...100.0 %
+002,2,Turn Signals,Rear Left,Display Range: 0.0...100.0 %
+002,3,Turn Signals,Front Right,Display Range: 0.0...100.0 %
+002,4,Turn Signals,Rear Right,Display Range: 0.0...100.0 %
+;
+003,0,Parking Lights (Output Signals)
+003,1,Parking Light,Front Left,Display Range: 0.0...100.0 %
+003,2,Parking Light,Rear Left,Display Range: 0.0...100.0 %
+003,3,Parking Light,Front Right,Display Range: 0.0...100.0 %
+003,4,Parking Light,Rear Right,Display Range: 0.0...100.0 %
+;
+004,0,(Output Signals)
+004,1,High Beam,Left,Display Range: 0.0...100.0 %
+004,2,High Beam,Right,Display Range: 0.0...100.0 %
+004,3,License Plate,Light,Display Range: 0.0...100.0 %
+004,4,Emergency Flasher,Illumination,Display Range: 0.0...100.0 %
+;
+005,0,Brake Lights (Output Signals)
+005,1,Brake Light,Left,Display Range: 0.0...100.0 %
+005,2,Brake Light,Right,Display Range: 0.0...100.0 %
+005,3,Brake Light,Center,Display Range: 0.0...100.0 %
+;
+006,0,Back-Up && Fog Lights (Output Signals)
+006,1,Back-Up Light,Rear Left,Display Range: 0.0...100.0 %
+006,2,Back-Up Light,Rear Right,Display Range: 0.0...100.0 %
+006,3,Fog Light,Rear Left,Display Range: 0.0...100.0 %
+006,4,Fog Light,Rear Right,Display Range: 0.0...100.0 %
+;
+007,0,Wiping && Washing (Output Signals)
+007,1,Front Wiping,Display Range: ON/OFF
+007,2,Rear Washing,Display Range: ON/OFF
+007,3,Rear Wiping,Display Range: ON/OFF
+007,4,Rear Washing,Display Range: ON/OFF
+;
+008,0,(Input Signals)
+008,1,Rotary Light Switch
+008,2,Emergency,Flasher Button,Display Range: Not Oper./Activated
+008,3,Status,Terminal 75,Display Range: ON/OFF
+008,4,Wiper Zero,Position,Display Range: ON/OFF
+;
+009,0,(Input Signals)
+009,1,Brake Light Switch,(from J519),Display Range: Not Oper./Activated
+009,2,Brake Light Switch,(via CAN),Display Range: Not Oper./Activated
+009,3,Brake Test Switch,(via CAN),Display Range: Not Oper./Activated
+009,4,Reverse Gear,(via CAN),Display Range: Not Oper./Activated
+;
+010,0,High Beam && Turn Signals (Input Signals)
+010,1,High Beam,,Display Range: Not Oper./Activated
+010,2,High Beam Flash,,Display Range: Not Oper./Activated
+010,3,Turn Signal Left,,Display Range: Not Oper./Activated
+010,4,Turn Signal Right,,Display Range: Not Oper./Activated
+;
+011,0,Wiping && Washing (Input Signals)
+011,1,Front Wiping,Display Range: ON/OFF
+011,2,Rear Washing,Display Range: ON/OFF
+011,3,Rear Wiping,Display Range: ON/OFF
+011,4,Rear Washing,Display Range: ON/OFF
+;
+012,0,(Input Signals)
+012,1,Status,Terminal 15
+012,2,Status,S-Contact
+012,3,Interval Steps
+;
+013,0,Low Beam && Fog Light (Output Signals)
+013,1,Low Beam Left,,Display Range: 0.0...100.0 %
+013,2,Low Beam Right,,Display Range: 0.0...100.0 %
+013,3,Fog Light Left,,Display Range: 0.0...100.0 %
+013,4,Fog Light Right,,Display Range: 0.0...100.0 %
+;
+014,0,High Beam Shutter & Headlight Washer (Output Signals)
+014,1,High Beam Shutter,,Display Range: ON/OFF
+014,2,Headlight Washer,System,Display Range: ON/OFF
+;
+015,0,Daytime Running Light && Coming Home Switch (Input Signals)
+015,1,Daytime Running,Light Switch,Display Range: Not Oper./Activated
+015,2,Coming-Home,Switch,Display Range: Not Oper./Activated
+;
+016,0,(Input Signals)
+016,1,Status,Driver'S Door,Display Range: Door Open/Door Closed
+016,2,Vehicle Speed
+016,3,Outside,Temperature
+;
+017,0,Rain/Light Sensor (LIN Signals)
+017,1,Rain/Light Sensor,Meas. Malfunction
+017,2,Rain/Light Sensor,Comm. Malfunction
+017,3,Rain/Light Sensor,Low Voltage
+017,4,Rain/Light Sensor,Excessive Voltage
+;
+018,0,Rain/Light Sensor (LIN Signals)
+018,1,Rain/Light Sensor,ADP Malfunction
+018,2,Rain/Light Sensor,ADP Malfunction
+018,3,Rain Sensor,Malfunction,Display Range: ON/OFF
+018,4,Light Sensor,Malfunction,Display Range: ON/OFF
+;
+019,0,Rain Sensor (LIN Signals)
+019,1,Wiper Speed
+019,2,Rain Rate
+;
+020,0,Light Sensor (LIN Signals)
+020,1,Light,,Display Range: ON/OFF
+020,2,Light (inverse),,Display Range: ON/OFF
+020,3,Dark/Bright,,Display Range: ON/OFF
+020,4,Brightness
+;
+050,0,LIN-Databus (LIN Signals)
+050,1,LIN-Sensor,Identification
+;
+080,0,Advanced Control Module Identification I
+080,1,Manufacturer etc.
+;
+081,0,Advanced Control Module Identification II
+081,1,Vehicle Identification Number (VIN) & Serial Number
+;
+125,0,CAN-Databus Communication (Comfort)
+125,1,Instrument Cluster,,Specification: Instruments 1
+125,2,Steering Wheel,Electronics,Specification: St. Wheel 1
+125,3,Comfort System,,Specification: Central 1
+125,4,Trailer Electronics,,Specification: Trailer 1
+;
+126,0,CAN-Databus Communication (Comfort)
+126,1,Door Electronics,Driver's Door,Specification: Dr. Door 1
+;
+127,0,LIN-Databus Communication
+127,1,Rain/Light Sensor,,Specification: Slave-A 1
+;
+;
+;---------------------------------------------------
+;
+; coding information
+;
+;---------------------------------------------------
+;
+;
+C00,Central Electronics (J519) Coding
+C01,?xxxx: Chassis
+C02,0 - Limousine (PR-K8B)
+C03,1 - Avant (PR-K8D)
+C04,x?xxx: Driving Light Switch
+C05,0 - without Rain/Light Sensor (G397 / PR-8K0/8K1/9C6/8K4)
+C06,1 - with Rain/Light Sensor (G397 / PR-8K3/8K7/9C7/8K9)
+C07,xx?xx: Trailer Hitch
+C08,0 - without Trailer Hitch (PR-1D0)
+C09,1 - with Trailer Hitch (PR-1D2)
+C10,xxx?x: Headlights
+C11,0 - Halogen Headlights w/o Daytime Running Lights (PR-8Q0/8Q1+8K0/8K7)
+C12,1 - Halogen Headlights with Daytime Running Lights (PR-8Q0/8Q1+8K1/8K3/9C6/9C7)
+C13,2 - Bi-Xenon Headlights with Daytime Running Lights (PR-8Q3/8Q5+8K9/8K4)
+C14,3 - Bi-Xenon Headlights w/o Daytime Running Lights (PR-8Q3/8Q5+8K0/8K7)
+C15,4 - Bi-Xenon Headlights with Daytime Running/Tail/License Plate Lights (PR-8Q3/8Q5+8K1/8K3)
+C16,xxxx?: Country
+C17,1 - Rest of World/Nordic Countries/Denmark/Croatia/Baltic Countries with Bi-Xenon
+C18,2 - Nordic Countries/Denmark/Croatia/Baltic Countries without Bi-Xenon
+C19,3 - USA/Canada with Bi-Xenon / 4 - Canada without Bi-Xenon
+C20,5 - Special Vehicles
+;
+;
+;---------------------------------------------------
+;
+; adaptation information
+;
+;---------------------------------------------------
+;
+;
+A81,0,Learned Values (Vehicle Data)
+A81,5,Learned Values (Vehicle Data)
+A81,6,To start the process for vehicle data (VIN)
+A81,7,learning enter/save 46992 as new value.
+;

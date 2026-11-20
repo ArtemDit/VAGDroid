@@ -1,0 +1,27 @@
+;
+; VAG-COM label file
+;
+; Aud A3 (8P) / Audi A4 (8E) / Audi TT (8N)
+; VW Golf/Jetta (1K) / VW New Beetle (1C) / VW Passat (3C)
+;
+; component: R146 - Digital Radio (#0F)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8E-0F.LBL
+; 8E0-035-593-SIR.LBL
+; 8E0-035-593-XM.LBL
+;
+; created on 03/Aug/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 29/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,8E0-035-593-SIR.LBL,8E0-035-593
+REDIRECT,8E0-035-593-SIR.LBL,8E0-035-593-D
+;
+REDIRECT,8E0-035-593-XM.LBL,8E0-035-593-A
+REDIRECT,8E0-035-593-XM.LBL,8E0-035-593-E
+;

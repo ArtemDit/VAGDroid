@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A3D6E"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:text="Адаптер не подключен"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Блок не выбран"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSelect"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01 — Выбор блока управления" />
+
+            <Button
+                android:id="@+id/btnFaults"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02 — Коды неисправностей" />
+
+            <Button
+                android:id="@+id/btnBlocks"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="08 — Измеряемые группы" />
+
+            <Button
+                android:id="@+id/btnOutputTests"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03 — Тест исполнителей" />
+
+            <Button
+                android:id="@+id/btnBasic"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04 — Базовые установки" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11 — Логин" />
+
+            <Button
+                android:id="@+id/btnAdaptation"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 — Адаптация" />
+
+            <Button
+                android:id="@+id/btnCoding"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="07 — Кодирование" />
+
+            <Button
+                android:id="@+id/btnAutoscan"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Автосканирование" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Подключение адаптера" />
+
+            <Button
+                android:id="@+id/btnLog"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Журнал" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                style="@style/VagButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О программе" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

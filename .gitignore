@@ -1,0 +1,19 @@
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+!app/release/*.apk
+
+# Оригинальный дистрибутив VAG-COM (не входит в репозиторий)
+VAGCOM/
+make_icons.py
+
+# Подпись релиза
+keystore.properties
+app/vagdroid.keystore

@@ -1,0 +1,31 @@
+;
+; VAG-COM Redirect File
+;
+; Audi A6 (4B)
+;
+; Component: Airbag (#15)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 4B-15.LBL
+; 4B0-959-655-AI7.LBL
+; 4B0-959-655-AI8.LBL
+; 4B0-959-655-AI84.LBL
+;
+; created on 20/Dec/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 10/Dec/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,4B0-959-655-AI7.LBL,4B0-959-655-C
+REDIRECT,4B0-959-655-AI7.LBL,4B0-959-655-J
+;
+REDIRECT,4B0-959-655-AI8.LBL,4B0-959-655-E
+REDIRECT,4B0-959-655-AI8.LBL,4B0-959-655-G
+;
+REDIRECT,4B0-959-655-AI84.LBL,4B0-959-655-AA
+REDIRECT,4B0-959-655-AI84.LBL,4B0-959-655-M
+REDIRECT,4B0-959-655-AI84.LBL,4B0-959-655-P
+;

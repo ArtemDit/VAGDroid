@@ -1,0 +1,28 @@
+;
+; VAG-COM Redirect File
+;
+; Ford Galaxy (7M) / Seat Alhambra (7M) / VW Sharan (7M)
+;
+; Component: J285 - Instrument cluster (#17)
+;
+; This is a redirect file that should
+; make all Ford Galaxy (7M) / Seat Alhambra (7M) / VW Sharan (7M)
+; instrument clusters work with 2 label files.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 7M-17.LBL
+; 7Mx-919-xxx.LBL
+; 7Mx-920-xxx.LBL
+;
+; by Sebastian Stange
+; sebastian@ross-tech.com
+;
+; last modification: 10/12/2004
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,7Mx-919-xxx.LBL,7M?-919-???-???
+REDIRECT,7Mx-920-xxx.LBL,7M?-920-???-???
+;

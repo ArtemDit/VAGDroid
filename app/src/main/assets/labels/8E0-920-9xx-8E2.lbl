@@ -1,0 +1,437 @@
+;
+; VAG-COM label file
+;
+; Audi A4 (8E2/8E5)
+;
+; Component: J285 - Instrument cluster (#17)
+;
+; P/N: 
+;
+; includes measuring blocks, adaptation and coding
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8E-17.LBL
+; 8E0-920-9xx-8E2.LBL
+; 8E0-920-9xx-8ED.LBL
+;
+; created on 02/oct/2004 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 14/Sep/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+;
+;---------------------------------------------------
+;
+; measuring block informations
+;
+;---------------------------------------------------
+;
+;
+001,1,Speed,[km/h]
+001,2,RPM,[1000/min]
+001,3,Oil pressure,switch 2,Display range: Oilp.2<min/Oilp.2 OK
+001,4,Time,[hh:mm]
+;
+002,1,Odometer,[km]
+002,2,Status remote,clock receiver,Display range: OK/not OK
+002,3,Comfort-CAN,Information,see Label-File
+; xx1 - Right-Hand-Drive (RHD)/Left-Hand-Drive (LHD) (1=RHD/0=LHD)
+; x1x - Install four-door (1=four-door/0=two-door)
+; 1xx - °C/°F (1=°F/0=°C)
+002,4,External,temperature,[°C]
+;
+003,1,Coolant,temperature
+003,2,Standing,time [min]
+003,3,Dimming signal,terminal 58d [%]
+003,4,Dimming signal,terminal 58s [%]
+;
+004,1,Tank display,[liters]
+004,2,Tank sensor,[Ohm]
+004,3,Tank display,2nd sensor [l],All wheel drive only
+004,4,Tank sensor,2nd sensor [Ohm],All wheel drive only
+;
+005,0,Service interval
+005,1,Kilometers,before/after
+005,2,Days,before/after
+005,3,engine hood,contact,Display range: open/closed
+005,4,Calculated,service interval
+;
+006,0,Oil level
+006,1,Oil level,MIN value [mm]
+006,2,Oil level,MAX value [mm]
+006,3,Oil level 100 km,intermediate value
+006,4,[N/A]
+;
+007,0,Oil level (resolution 0.01 mm)
+007,1,Oil level,current value
+007,2,Oil level,shaft,current value from engine control module
+007,3,[N/A]
+007,4,[N/A]
+;
+010,0,Adaptation channels
+010,1,Channel 30
+010,2,Adaptation of,tank sensor
+010,3,Channel 9
+010,4,Kilometer,,Resolution: 0.1
+;
+011,0,Adaptation channels
+011,1,Channel 4
+011,2,Language,variations,see adaptation channels
+011,3,Channel 3
+011,4,Consumption,correction
+;
+012,0,Adaptation channels
+012,1,Channel 40
+012,2,Distance traveled,as of insp.,Resolution: 0.01
+012,3,Channel 41
+012,4,Time as of,inspection
+;
+013,0,Adaptation channels
+013,1,Channel 42
+013,2,Min. value km
+013,3,Channel 43
+013,4,Max. value km
+;
+014,0,Adaptation channels
+014,1,Channel 44
+014,2,Max. time,interval
+014,3,Channel 49
+014,4,[N/A]
+;
+015,0,Adaptation channels
+015,1,Channel 45
+015,2,Oil quality
+015,3,Channel 46
+015,4,Consumption,quantity
+;
+016,0,Adaptation channels
+016,1,Channel 47
+016,2,Soot index
+016,3,Channel 48
+016,4,Thermal load
+;
+017,0,Adaptation channels
+017,1,Channel 60
+017,2,Powertrain,CAN-Databus
+017,3,Channel 61
+017,4,Comfort,CAN-Databus
+;
+018,0,Adaptation channels
+018,1,Channel 62
+018,2,Information,CAN-Databus
+018,3,[N/A]
+018,4,[N/A]
+;
+019,0,Adaptation channels
+019,1,Channel 18
+019,2,Auxiliary,heater
+019,3,Channel 19
+019,4,Remote clock,configuration
+;
+022,0,Immobilizer
+022,1,Starting,permitted
+022,2,Engine (ECM),responds
+022,3,Key condition,OK
+022,4,Number of,keys coded
+;
+023,0,Immobilizer
+023,1,Variable code,authorized
+023,2,Key status,(transponder)
+023,3,Fixed code,authorized
+023,4,Immobilizer,status,see labelfile
+; 4 - new customer service - delivery condition (replacement part instrument cluster)
+; 5 - customer service locked - adaptation data programmed in customer service
+; 6 - immobilizer adapted - normal function condition
+; 7 - key adaptation active - key adaptation via tester
+;
+024,0,Immobilizer - locking periods
+024,1,Instrument,cluster
+024,2,Engine control, module (ECM)
+024,3,Emergency,release
+024,4,Transponder,recognition
+;
+025,0,CAN-Communication
+025,1,CAN-communication,to ECM
+025,2,[N/A]
+025,3,[N/A]
+025,4,[N/A]
+;
+050,1,Odometer,[km]
+050,2,RPM,[1/min]
+050,3,Oil temperature,[°C]
+050,4,Coolant,temperature,[°C]
+;
+080,0,Manufacturer work number and identification
+; Date of manufacture
+; Manufacturer changing status
+; Manufacturer test stand no.
+; Running manufacturer no.
+; e.g. BPA = Bosch factory Ansbach
+;
+081,0,Vehicle Identification Number (VIN)
+; Serial number
+; Type test number
+;
+082,0,Flash-Tool-Code (FTC)
+; Flash-Date (in dd.mm.yy)
+;
+125,0,CAN-Databus communication (Powertrain)
+125,1,Engine
+125,2,Transmission
+125,3,ABS
+125,4,ADR
+;
+126,0,CAN-Databus communication (Powertrain)
+126,1,[N/A]
+126,2,4C air spring
+126,3,[N/A]
+126,4,[N/A]
+;
+130,0,CAN-Databus communication (Comfort)
+130,1,Tire pressure
+130,2,Auxiliary heater
+130,3,Control module,comfort system
+130,4,Trailer
+;
+131,0,CAN-Databus communication (Comfort)
+131,1,Control module,electrical system
+131,2,Steering column,module
+131,3,Climate control
+131,4,Operating,K-CAN,Display range: one wire/tow wire
+;
+132,0,CAN-Databus communication (Comfort)
+132,1,Convertible top
+132,2,[N/A]
+132,3,[N/A]
+132,4,[N/A]
+;
+140,0,CAN-Databus communication (Infotainment)
+140,1,Radio
+140,2,Telephone
+140,3,Navigation
+140,4,Telematics
+;
+141,0,CAN-Databus communication (Infotainment)
+141,1,Speech input
+141,2,[N/A]
+141,3,[N/A]
+141,4,Operating type,D-CAN
+;
+200,0,Tank display - consumption correction (per EEPROM-Bit switch off ability)
+200,1,Uncorrected,display value,VAOK
+200,2,Corrected,display value,VAK
+200,3,Damped corrected,value,VA
+200,4,[N/A]
+;
+;
+;---------------------------------------------------
+;
+; Coding informations
+;
+;---------------------------------------------------
+;
+;
+C0,J285 - Instrument cluster
+C1,??x01 - Equipment variations
+C2,+00 - 1. K-Number (Europe, USA, Rest of World)
+C3,+01 - Smaller fuel tank volume (All wheel drive)
+C4,+02 - Seatbelt warning (NAR old - NOT USA from 45/2004)
+C5,+04 - 3. K-Number (rental cars)
+C6,+08 - 2. K-Number (Australia)
+C7, 
+C8,xx?01 - Country variations
+C9,0 - Germany (D) / 1 - Rest of World (RoW)
+C10,2 - USA (US) / 3 - Canada (CDN)
+C11,4 - Great Britain (GB) / 5 - Japan (JP)
+C12,6 - Arabic states / 7 - Australia (AUS)
+C13, 
+C14,xxx?1: Seatbelt warning (USA only | 45/2004 >)
+C15,3 - Seatbelt warning (NAR new)
+C16,
+C17,Note: The speedometer lead or distance driven lead is set with the K-number. 
+C18,PR-9P1 - Seatbelt warning (E-contact in belt lock)
+C19,PR-9P5 - Seatbelt warning (optical and acoustic / E-contact in belt lock)
+C20,PR-F4F - Rental car equipment
+;
+;
+;---------------------------------------------------
+;
+; Adaptation informations
+;
+;---------------------------------------------------
+;
+;
+A3,0,Consumption correction
+A3,5,Consumption correction
+A3,6,85...115 % (in 5% increments)
+;
+A4,0,Language variants
+A4,5,Language variants
+A4,6,1 - German
+A4,7,2 - English
+A4,8,3 - French
+A4,9,4 - Italian
+A4,10,5 - Spanish
+A4,11,6 - Portuguese
+A4,12,8 - Chinese
+;
+A9,0,Mileage
+A9,5,Mileage
+A9,6,km/miles reading
+A9,7,Resolution: 0.01
+;
+A18,0,Auxiliary heating
+A18,5,Auxiliary heating
+A18,6,0 - no auxiliary heating installed
+A18,7,1 - Auxiliary heating installed
+A18,8,2 - Auxiliary heating installed and goes out when turning engine off
+A18,9,3 - only auxiliary ventilation
+A18,10,4 - only auxiliary ventilation and goes out when turning engine off
+;
+A19,0,Additional features
+A19,5,Additional features
+A19,6,?xxxx - Illumination option
+A19,7,0 - Needle and scala only active at 'Light on"
+A19,8,1 - Needle already active at 'Ignition on'
+A19,9,2 - Scale already active at 'Ignition on'
+A19,10,3 - Scala (2. map) and needle at "ignition on" active
+A19,11, 
+A19,12,x?xxx - Board computer
+A19,13,0 - only level 2 (long time memory)
+A19,14,1 - level 1 and 2
+A19,15, 
+A19,16,xx?xx - Driver Information System (DIS)
+A19,17,0 - DIS 1 / 1 - Highline without DIS / 2 - DIS 2
+A19,18, 
+A19,19,xxx?x - Outside temperature
+A19,20,0 - no display, illumination goes out
+A19,21,1 - Display and illumination active
+A19,22, 
+A19,23,xxxx? - Remote clock
+A19,24,0 - Remote clock not active / 1 - Remote clock active
+;
+A29,0,Tank characteristic (fuel level sensor 2)
+A29,5,Tank characteristic (fuel level sensor 2)
+A29,6,Parallel shift of tank characteristic by +/- 32 Ohm
+A29,7,Value range: 96...160
+;
+A30,0,Tank characteristic
+A30,5,Tank characteristic
+A30,6,Parallel shift of tank characteristic by +/- 32 Ohm
+A30,7,Value range: 96...160
+;
+A34,0,Fuel gauge display - additional functions
+A34,5,Fuel gauge display - additional functions
+A34,6,?xx - Full correction sensor 1
+A34,7,1 - active / 0 - not active
+A34,8, 
+A34,9,x?x - Empty correction sensor
+A34,10,1 - active / 0 - not active
+A34,11, 
+A34,12,xx? - Monitoring sensor
+A34,13,1 - active / 0 - not active
+;
+A35,0,Speed threshold
+A35,5,Speed threshold
+A35,6,Value for speed threshold of dynamic oil pressure system
+A35,7,from 0 to 1000 RPM in increments from 250 RPM.
+;
+A40,0,Distance from inspection
+A40,5,Distance from inspection
+A40,6,Resolution: 1 = 100 km
+A40,7, 
+A40,8,NOTE: Adaptation channels 40-48 must be
+A40,9,entered and stored in the following order:
+A40,10,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A41,0,Time from inspection
+A41,5,Time from inspection
+A41,6, 
+A41,7,NOTE: Adaptation channels 40-48 must be
+A41,8,entered and stored in the following order:
+A41,9,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A42,0,Minimum value mileage
+A42,5,Minimum value mileage
+A42,6,Resolution: 1 = 1000 km
+A42,7, 
+A42,8,NOTE: Adaptation channels 40-48 must be
+A42,9,entered and stored in the following order:
+A42,10,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A43,0,Maximum value mileage
+A43,5,Maximum value mileage
+A43,6,Resolution: 1 = 1000 km
+A43,7, 
+A43,8,NOTE: Adaptation channels 40-48 must be
+A43,9,entered and stored in the following order:
+A43,10,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A44,0,Maximum time interval
+A44,5,Maximum time interval
+A44,6, 
+A44,7,NOTE: Adaptation channels 40-48 must be
+A44,8,entered and stored in the following order:
+A44,9,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A45,0,Oil quality
+A45,5,Oil quality
+A45,6,Value range: 0.5 - 2.0
+A45,7, 
+A45,8,NOTE: Adaptation channels 40-48 must be
+A45,9,entered and stored in the following order:
+A45,10,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A46,0,Total consumption amount (Gas only)
+A46,0,Total consumption amount (Gas only)
+A46,6, 
+A46,7,NOTE: Adaptation channels 40-48 must be
+A46,8,entered and stored in the following order:
+A46,9,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A47,0,Soot entry (Diesel only)
+A47,5,Soot entry (Diesel only)
+A47,6,Resolution: 1 = 100 km
+A47,7, 
+A47,8,NOTE: Adaptation channels 40-48 must be
+A47,9,entered and stored in the following order:
+A47,10,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A48,0,Thermal load (Diesel only)
+A48,5,Thermal load (Diesel only)
+A48,6,Resolution: 1 = 100 km
+A48,7, 
+A48,8,NOTE: Adaptation channels 40-48 must be
+A48,9,entered and stored in the following order:
+A48,10,45 > 42 > 43 > 44 > 40 > 41 > 46 > 47 > 48
+;
+A60,0,Powertrain CAN-Databus
+A60,5,Powertrain CAN-Databus
+A60,6,+0001 - Engine
+A60,7,+0002 - Automatic transmission
+A60,8,+0004 - Brake
+A60,9,+1024 - Instrument cluster
+;
+A61,0,Comfort CAN-Databus
+A61,5,Comfort CAN-Databus
+A61,6,+00001 - Vehicle electrical system control module (ILM)
+A61,7,+00002 - CCE (central comfort electric)
+A61,8,+00064 - Trailer
+A61,9,+00128 - Convertible top
+A61,10,+00256 - Instrument cluster
+A61,11,+00512 - Tire pressure control
+A61,12,+01024 - Steering column module
+A61,13,+02048 - Climate control
+A61,14,+32768 - Auxiliary heating
+;
+A62,0,Infotainment CAN-Databus
+A62,5,Infotainment CAN-Databus
+A62,6,+01 - Radio
+A62,7,+02 - Telephone
+A62,8,+04 - Navigation
+A62,9,+08 - Telematic
+A62,10,+16 - Intrument cluster (only if 2. unit is installed)
+;

@@ -1,0 +1,29 @@
+;
+; VAG-COM label file
+;
+; VW Caddy (2K) / VW Golf/Jetta (1K) / VW Touran (1T)
+; Seat Altea/Toledo (5P) / Skoda Octavia II (1Z)
+;
+; component: J386 - Driver's Door Electronics (#42)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1K-42.LBL
+; 1T-42.LBL
+; 1K0-959-701-MIN.LBL
+; 1K0-959-701-MAX.LBL
+;
+; created on 21/Sep/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 28/Sep/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1K0-959-701-MIN.LBL,1T0-959-701     ; MIN
+;
+REDIRECT,1K0-959-701-MAX.LBL,1T0-959-701-A   ; MAX
+REDIRECT,1K0-959-701-MAX.LBL,1T0-959-701-C   ; MAX
+;

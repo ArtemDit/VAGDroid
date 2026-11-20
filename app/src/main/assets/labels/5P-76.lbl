@@ -1,0 +1,24 @@
+;
+; VAG-COM Redirect File
+;
+; Seat Altea/Toledo (5P) / Seat Leon (1P)
+; VW Golf/Jetta (1K/5M) / VW Touran (1T)
+;
+; Component: J446 - Parking Aid (#76)
+;
+; This is a redirect file.
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 5P-76.LBL
+; 1K0-919-283.LBL
+;
+; created on 26/Sep/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 26/Sep/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1K0-919-283.LBL,5P0-919-283-???
+;

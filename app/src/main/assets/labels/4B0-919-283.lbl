@@ -1,0 +1,42 @@
+;
+; VAG-COM Measuring Block Labels file.
+; Module 76 -- Parking aid rear  4-channel
+; A3 , A4 , A6 , A8
+;
+; p/n  :  4B0-919-283
+;
+; **Modification history**
+; created:  Dima Suhov, 20 July 2002.
+; please email any comments or corrections: terma@svitonline.com
+;
+; **********************************************************************
+1,0,Distance sensor:
+1,1,rear left,cm
+1,2,rear left/centre,cm
+1,3,rear right/centre,cm
+1,4,rear right,cm
+;
+2,1,Shortest distance,cm
+2,2,Road speed,km/h
+2,3,Warning buzzer
+2,4,---
+;
+3,1,Supply voltage,V
+3,2,Reverse gear
+3,3,Trailer
+3,4,---
+;
+4,0,Attenuation time:
+4,1,rear left,ms
+4,2,rear left/centre,ms
+4,3,rear right/centre,ms
+4,4,rear right,ms
+;
+5,0,END
+;
+6,0,END
+;
+7,0,END
+;
+;
+;<end of file>

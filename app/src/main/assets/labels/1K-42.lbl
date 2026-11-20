@@ -1,0 +1,25 @@
+;
+; VAG-COM Redirect File
+;
+; Component: J386 - Driver's Door Electronics (#42)
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 1K-42.LBL
+; 1T-42.LBL
+; 1K0-959-701-MIN.LBL
+; 1K0-959-701-MAX.LBL
+; 1K0-959-701-USA.LBL
+;
+; created on 21/Sep/2005 by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 29/Oct/2005
+;
+; requires VAG-COM 405.0 or newer
+;
+REDIRECT,1K0-959-701-MIN.LBL,1K0-959-701-E   ; MIN
+REDIRECT,1K0-959-701-MAX.LBL,1K0-959-701-G   ; MAX
+REDIRECT,1K0-959-701-USA.LBL,1K0-959-701-K   ; USA
+REDIRECT,1K0-959-701-MAX.LBL,1K0-959-701-L   ; MAX
+;

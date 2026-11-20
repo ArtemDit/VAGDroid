@@ -1,0 +1,79 @@
+;
+; VAG-COM label file
+;
+; VW Caddy (2K) / VW Golf/Jetta (1K) / VW Touran (1T)
+; Seat Altea/Toledo (5P) / Skoda Octavia II (1Z)
+;
+; component: J453 - Steering Wheel Electronics (#16)
+;
+; p/n: 1K0 953 549 ???
+;
+; includes measuring blocks
+;
+; This file is part of a redirection package,
+; make sure you have all of the following files.
+;
+; 8P-16.LBL
+; 1K0-953-549.LBL
+;
+; by Sebastian Stange (sebastian@ross-tech.com)
+;
+; last modification: 03/23/2005
+;
+; ready for VAG-COM 405.0 and above
+;
+;
+;---------------------------------------------------
+;
+; measuring block informations
+;
+;---------------------------------------------------
+;
+;
+001,1,Blinker,,Display Range: n. operated/left/right
+001,2,Headlamp Flasher,,Display Range: n. operated/operated
+001,3,High Beam,,Display Range: n. operated/operated
+001,4,Front Wiper,,Display Range: n. operated/level/Stage Int./Stage 1/Stage 2
+;
+002,1,Interval Stages,,Display Range: Stage 1/Stage 2/Stage 3/Stage 4
+002,2,Wash Front,,Display Range: n. operated/operated
+002,3,Wiping Rear,,Display Range: n. operated/operated/not installed
+002,4,Washing Rear,,Display Range: n. operated/operated/not installed
+;
+003,1,Terminal Status,,see labelfile
+; ?xxxx - P-Contact
+; x?xxx - S-Contact
+; xx?xx - Terminal 75
+; xxx?x - Terminal 15
+; xxxx? - Terminal 50
+003,2,Horn,,Display Range: n. operated/operated
+003,3,Multi-Function,Display,Display Range: n. installed/n. operated/Reset/Up/Down
+;
+004,0,Cruise-Cntrol-System
+004,1,Main Switch,,Display Range: n. installed/off/on
+004,2,CCS-Set,,Display Range: n. operated/decelerate/accelerate/Reset
+;
+005,1,Park Position in,Selector Lever,Display Range: n. installed/n.Ok/on/recognized
+005,2,Selector Lever,Information (Pos. P),Display Range: n. defined/recognized/on
+005,3,Key,Removal Lock,Display Range: n. installed/on/off
+005,4,Status Key,Removal Lock,Display Range: n. installed/Ok/n.Ok
+;
+006,0,Multi-Function Steering Wheel
+006,1,Communication,,Display Range: n. intalled/Ok/n.Ok
+006,2,Software Version
+006,3,Hardware Version
+006,4,Malfunction,recognized,Display Range: yes/no
+;
+007,0,Multi-Function Steering Wheel
+007,1,Buttons pressed
+007,2,Buttons pressed
+007,3,Tiptronic Down,,Display Range: n. operated/operated/not installed
+007,4,Tiptronic Up,,Display Range: n. operated/operated/not installed
+;
+008,1,Steering Wheel,Heater,Display Range: n. installed/off/on
+008,2,Temprature,Sensor,Display Range: n. installed/Temperature
+008,3,Current,at Output
+008,4,Driverside,heated Seat,Display Range: off/Stage
+;
+009,1,Dimming,,Display Range: 0...100 %
+;
